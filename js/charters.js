@@ -39,28 +39,22 @@ $(".decreaseQty").on("click", function () {
 });
 // BOOK TICKET Ends
 
-var swiperServices = new Swiper(".services-swiper", {
+var swiperServices = new Swiper(".counterSwiper", {
   speed: 800,
   spaceBetween: 30,
   slidesPerView: 1,
   grabCursor: true,
   navigation: {
-    nextEl: ".s-nav-next",
-    prevEl: ".s-nav-prev",
+    nextEl: ".comm-next",
+    prevEl: ".comm-prev",
   },
   pagination: {
-    el: ".pagination-services",
+    el: ".comm-pagination",
     type: "custom",
     renderCustom: function (swiper, current, total) {
       return "0" + current + "<span></span>" + "0" + total;
     },
   },
-});
-var swiperServicesTxt = new Swiper(".swiper-ser-txt", {
-  speed: 800,
-  spaceBetween: 30,
-  slidesPerView: 1,
-  grabCursor: true,
 });
 
 /*Counter Script*/
