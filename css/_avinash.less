@@ -48,6 +48,7 @@
   .flex(flex-start,flex-start);
   gap: 16px;
   margin-bottom: 40px;
+  width: fit-content;
 
   &:last-child {
     margin-bottom: 0;
@@ -63,6 +64,7 @@
     width: fit-content;
     font-family: "Futura";
     .anim();
+    flex: 1;
 
     &:hover {
       color: rgba(0, 0, 0, 0.4);
@@ -79,6 +81,7 @@
     font-weight: 500;
     line-height: 1.4;
     max-width: 440px;
+    flex: 1;
   }
 }
 
@@ -115,11 +118,14 @@
   .flex();
   gap: 36px;
   max-width: 536px;
+  flex-wrap: wrap;
 }
 // Footer Ends
 
 // Charter Starts
 .fleet-pointers {
+  display: none;
+
   ul {
     .flex(space-between);
     flex-wrap: wrap;
@@ -227,12 +233,15 @@
 }
 
 .counter-info {
+  margin-bottom: 48px;
+}
+
+.counter-num {
   color: #fff;
   font-size: 56px;
   font-family: "Futura";
   font-weight: 500;
   letter-spacing: -1.12px;
-  margin-bottom: 48px;
 }
 
 .count-small-info {
@@ -264,34 +273,6 @@
   height: 100%;
 }
 
-.contact-img-title {
-  color: #fff;
-  font-size: 18px;
-  font-family: "Josefin Sans";
-  font-weight: 500;
-  letter-spacing: 1.8px;
-  text-transform: uppercase;
-  margin-bottom: 48px;
-}
-
-.conatct-img-smtitle {
-  color: #fff;
-  font-size: 32px;
-  font-family: "Futura";
-  font-weight: 500;
-  line-height: 1.3;
-}
-
-.conatct-img-para {
-  p {
-    color: #fff;
-    font-size: 24px;
-    font-family: "Futura";
-    font-weight: 500;
-    line-height: 1.5;
-  }
-}
-
 .comm-next.black,
 .comm-prev.black {
   background: #000000;
@@ -305,7 +286,7 @@
   }
 }
 
-.counter-swiper {
+.counter-info-swiper {
   position: relative;
   background: #fff;
 
@@ -319,31 +300,20 @@
     align-items: flex-end;
     flex-direction: row-reverse;
     padding: 0 76px 76px;
+    gap: 16px;
   }
 }
 
 .counter-info-box {
   padding: 76px;
 
-  span {
-    color: #000;
-    font-size: 18px;
-    font-family: "Josefin Sans";
-    font-weight: 500;
-    line-height: 1.2;
-    letter-spacing: 1.8px;
-    text-transform: uppercase;
-    margin-bottom: 48px;
-    display: block;
+  .comm-small-title h5 {
+    color: #000000;
   }
-}
 
-.counter-info-hdn {
-  color: #000;
-  font-size: 32px;
-  font-weight: 500;
-  line-height: 1.2;
-  margin-bottom: 130px;
+  .comm-small-title {
+    margin-bottom: 120px;
+  }
 }
 
 // Charter Ends
@@ -357,7 +327,8 @@
 }
 
 .about-img {
-  width: 1462px;
+  max-width: 1462px;
+  width: 100%;
   height: 259px;
 
   img {
@@ -428,6 +399,7 @@
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  gap: 40px;
   height: 100%;
 
   .comm-txt {

@@ -56,24 +56,54 @@
                 </div>
                 <div class="tabs">
                   <ul>
-                    <li class="button">Private Jets</li>
-                    <li class="button line">Helicopters</li>
-                    <li class="button line">Yatch</li>
+                    <li class="button" rel="tab1">Private Jets</li>
+                    <li class="button line" rel="tab2">Helicopters</li>
+                    <li class="button line" rel="tab3">Yatch</li>
                   </ul>
                 </div>
-                <div class="fleet-pointers">
-                  <ul>
-                    <li>Dassault Falcon 2000</li>
-                    <li>Beachcraft Premier 1</li>
-                    <li>Embraer Legacy 650</li>
-                    <li>Hawker 850 XP</li>
-                    <li>Bombardier Global Express</li>
-                    <li>Cessna Citation XIS</li>
-                    <li>Gulfstream G150</li>
-                    <li>Citation Cj 2+</li>
-                    <li>Beachcraft B200</li>
-                    <li>Airbus A319</li>
-                  </ul>
+                <div class="tab_container">
+                  <div class="fleet-pointers" id="tab1">
+                    <ul>
+                      <li>Beachcraft Premier 1</li>
+                      <li>Embraer Legacy 650</li>
+                      <li>Hawker 850 XP</li>
+                      <li>Bombardier Global Express</li>
+                      <li>Dassault Falcon 1</li>
+                      <li>Cessna Citation XIS</li>
+                      <li>Gulfstream G150</li>
+                      <li>Citation Cj 2+</li>
+                      <li>Beachcraft B200</li>
+                      <li>Airbus A319</li>
+                    </ul>
+                  </div>
+                  <div class="fleet-pointers" id="tab2">
+                    <ul>
+                      <li>Embraer Legacy 650</li>
+                      <li>Hawker 850 XP</li>
+                      <li>Dassault Falcon 2</li>
+                      <li>Bombardier Global Express</li>
+                      <li>Beachcraft Premier 1</li>
+                      <li>Cessna Citation XIS</li>
+                      <li>Gulfstream G150</li>
+                      <li>Citation Cj 2+</li>
+                      <li>Beachcraft B200</li>
+                      <li>Airbus A319</li>
+                    </ul>
+                  </div>
+                  <div class="fleet-pointers" id="tab3">
+                    <ul>
+                      <li>Bombardier Global Express</li>
+                      <li>Beachcraft Premier 1</li>
+                      <li>Dassault Falcon 3</li>
+                      <li>Cessna Citation XIS</li>
+                      <li>Hawker 850 XP</li>
+                      <li>Gulfstream G150</li>
+                      <li>Citation Cj 2+</li>
+                      <li>Embraer Legacy 650</li>
+                      <li>Beachcraft B200</li>
+                      <li>Airbus A319</li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
@@ -86,42 +116,110 @@
         <div class="container">
           <div class="f-row f-2 f-990-1">
             <div class="f-col">
-              <div class="count-wrap">
-                <div class="w50">
-                  <div class="counter-info">
-                    <span class="counter-num" data-count="10"></span>
+              <div class="counterSwiper counter-swiper swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="count-wrap">
+                      <div class="w50">
+                        <div class="counter-info">
+                          <span class="counter-num">10</span>
+                        </div>
+                        <p>Suitcases</p>
+                      </div>
+                      <div class="w50">
+                        <div class="counter-info">
+                          <span class="counter-num">2.5</span>
+                          <span class="count-small-info">M<sub>3</sub></span>
+                        </div>
+                        <p>Baggage Capacity</p>
+                      </div>
+                      <div class="w50">
+                        <div class="counter-info">
+                          <span class="counter-num">5956</span>
+                          <span class="count-small-info">km</span>
+                        </div>
+                        <p>Range</p>
+                      </div>
+                      <div class="w50">
+                        <div class="counter-info">
+                          <span class="counter-num">8</span>
+                        </div>
+                        <p>Individual seats</p>
+                      </div>
+                    </div>
                   </div>
-                  <p>Suitcases</p>
-                </div>
-                <div class="w50">
-                  <div class="counter-info">
-                    <span class="counter-num" data-count="2.5"></span>
-                    <span class="count-small-info">M<sub>3</sub></span>
+                  <div class="swiper-slide">
+                    <div class="count-wrap">
+                      <div class="w50">
+                        <div class="counter-info">
+                          <span class="counter-num">5956</span>
+                          <span class="count-small-info">km</span>
+                        </div>
+                        <p>Range</p>
+                      </div>
+                      <div class="w50">
+                        <div class="counter-info">
+                          <span class="counter-num">8</span>
+                        </div>
+                        <p>Individual seats</p>
+                      </div>
+                      <div class="w50">
+                        <div class="counter-info">
+                          <span class="counter-num">10</span>
+                        </div>
+                        <p>Suitcases</p>
+                      </div>
+                      <div class="w50">
+                        <div class="counter-info">
+                          <span class="counter-num">2.5</span>
+                          <span class="count-small-info">M<sub>3</sub></span>
+                        </div>
+                        <p>Baggage Capacity</p>
+                      </div>
+                    </div>
                   </div>
-                  <p>Baggage Capacity</p>
-                </div>
-                <div class="w50">
-                  <div class="counter-info">
-                    <span class="counter-num" data-count="5956"></span>
-                    <span class="count-small-info">km</span>
+                  <div class="swiper-slide">
+                    <div class="count-wrap">
+                      <div class="w50">
+                        <div class="counter-info">
+                          <span class="counter-num">2.5</span>
+                          <span class="count-small-info">M<sub>3</sub></span>
+                        </div>
+                        <p>Baggage Capacity</p>
+                      </div>
+                      <div class="w50">
+                        <div class="counter-info">
+                          <span class="counter-num">5956</span>
+                          <span class="count-small-info">km</span>
+                        </div>
+                        <p>Range</p>
+                      </div>
+                      <div class="w50">
+                        <div class="counter-info">
+                          <span class="counter-num">10</span>
+                        </div>
+                        <p>Suitcases</p>
+                      </div>
+                      <div class="w50">
+                        <div class="counter-info">
+                          <span class="counter-num">8</span>
+                        </div>
+                        <p>Individual seats</p>
+                      </div>
+                    </div>
                   </div>
-                  <p>Range</p>
-                </div>
-                <div class="w50">
-                  <div class="counter-info">
-                    <span class="counter-num" data-count="8"></span>
-                  </div>
-                  <p>Individual seats</p>
                 </div>
               </div>
             </div>
             <div class="f-col">
-              <div class="counterSwiper counter-swiper swiper">
+              <div class="counterInfoSwiper counter-info-swiper swiper">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
                     <div class="counter-info-box">
-                      <span>08 pax</span>
-                      <h4 class="counter-info-hdn">Cessna Citation XIS</h4>
+                      <div class="comm-small-title">
+                        <h5>08 pax</h5>
+                        <h4 class="comm-txt-2">Cessna Citation XIS</h4>
+                      </div>
                       <div class="comm-txt blck">
                         <p>
                           The Cessna Citation X is an American business jet
@@ -136,8 +234,10 @@
                   </div>
                   <div class="swiper-slide">
                     <div class="counter-info-box">
-                      <span>08 pax</span>
-                      <h4 class="counter-info-hdn">Cessna Citation XIS</h4>
+                      <div class="comm-small-title">
+                        <h5>01</h5>
+                        <h4 class="comm-txt-2">Private Jet Charter</h4>
+                      </div>
                       <div class="comm-txt blck">
                         <p>
                           The Cessna Citation X is an American business jet
@@ -148,8 +248,10 @@
                   </div>
                   <div class="swiper-slide">
                     <div class="counter-info-box">
-                      <span>08 pax</span>
-                      <h4 class="counter-info-hdn">Cessna Citation XIS</h4>
+                      <div class="comm-small-title">
+                        <h5>08 pax</h5>
+                        <h4 class="comm-txt-2">Cessna Citation XIS</h4>
+                      </div>
                       <div class="comm-txt blck">
                         <p>
                           The Cessna Citation X is an American business jet
@@ -238,9 +340,9 @@
       </div>
 
       <!-- Promise -->
-      <div class="comm-section black-bg">
+      <!-- <div class="comm-section black-bg">
         <div class="container"></div>
-      </div>
+      </div> -->
 
       <!-- CONTACT FORM -->
       <div class="comm-section alt-wrap right-image black-bg">
@@ -250,17 +352,15 @@
               <div class="alternate-img contact-img">
                 <img src="./img/form-img.jpg" alt="" />
                 <div class="contact-img-info">
-                  <div class="conatct-img-top">
-                    <h5 class="contact-img-title">CONTACT FORM</h5>
-                    <h4 class="conatct-img-smtitle">Charter by Choice</h4>
+                  <div class="comm-small-title">
+                    <h5>CONTACT FORM</h5>
+                    <h4 class="comm-txt-2 white">Charter by Choice</h4>
                   </div>
-                  <div class="conatct-img-para">
-                    <p>
-                      Feel free to contact us about everything from booking
-                      inquiries, customizing your travel itinerary, special
-                      requests, or any other questions you may have.
-                    </p>
-                  </div>
+                  <p class="comm-txt white">
+                    Feel free to contact us about everything from booking
+                    inquiries, customizing your travel itinerary, special
+                    requests, or any other questions you may have.
+                  </p>
                 </div>
               </div>
             </div>
