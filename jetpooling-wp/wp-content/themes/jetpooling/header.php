@@ -19,7 +19,7 @@
                 </ul>
                 <div class="logoBox">
                     <a class="logo" href="./index.html">
-                        <img src="<?php bloginfo('template_url'); ?>/assets/himg/logo.svg" alt="Logo" />
+                        <img src="<?php bloginfo('template_url'); ?>/assets/img/logo.svg" alt="Logo" />
                     </a>
                 </div>
                 <div class="menuBtn">
