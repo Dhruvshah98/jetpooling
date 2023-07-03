@@ -87,7 +87,7 @@ get_header(); ?>
                         <div class="f-col">
                             <div class="promise-box">
                                 <div class="promise-icon">
-                                    <img src="/img/pr-1.svg" alt="" />
+                                    <img src="<?php bloginfo('template_url'); ?>/assets/img/pr-1.svg" alt="" />
                                 </div>
                                 <h3>Peace of mind</h3>
                                 <p>
@@ -98,7 +98,7 @@ get_header(); ?>
                         <div class="f-col">
                             <div class="promise-box">
                                 <div class="promise-icon">
-                                    <img src="/img/pr-2.svg" alt="" />
+                                    <img src="<?php bloginfo('template_url'); ?>/assets/img/pr-2.svg" alt="" />
                                 </div>
                                 <h3>Bespoke design</h3>
                                 <p>
@@ -110,7 +110,7 @@ get_header(); ?>
                         <div class="f-col">
                             <div class="promise-box">
                                 <div class="promise-icon">
-                                    <img src="/img/pr-3.svg" alt="" />
+                                    <img src="<?php bloginfo('template_url'); ?>/assets/img/pr-3.svg" alt="" />
                                 </div>
                                 <h3>Personalized Service</h3>
                                 <p>
@@ -122,7 +122,7 @@ get_header(); ?>
                         <div class="f-col">
                             <div class="promise-box">
                                 <div class="promise-icon">
-                                    <img src="/img/pr-4.svg" alt="" />
+                                    <img src="<?php bloginfo('template_url'); ?>/assets/img/pr-4.svg" alt="" />
                                 </div>
                                 <h3>Flexibility</h3>
                                 <p>
@@ -141,7 +141,7 @@ get_header(); ?>
     <!-- Lines Starts -->
     <div class="comm-section">
         <div class="lines-bg">
-            <img src="/img/line-light-bg.png" alt="" />
+            <img src="<?php bloginfo('template_url'); ?>/assets/img/line-light-bg.png" alt="" />
         </div>
         <div class="container">
             <div class="lines-txt">
@@ -167,17 +167,17 @@ get_header(); ?>
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                     <div class="alternate-img">
-                                        <img src="/img/team.png" alt="" />
+                                        <img src="<?php bloginfo('template_url'); ?>/assets/img/team.png" alt="" />
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="alternate-img">
-                                        <img src="/img/team.png" alt="" />
+                                        <img src="<?php bloginfo('template_url'); ?>/assets/img/team.png" alt="" />
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="alternate-img">
-                                        <img src="/img/team.png" alt="" />
+                                        <img src="<?php bloginfo('template_url'); ?>/assets/img/team.png" alt="" />
                                     </div>
                                 </div>
                             </div>

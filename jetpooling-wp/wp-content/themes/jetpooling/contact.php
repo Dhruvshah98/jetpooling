@@ -1,6 +1,6 @@
 <?php
 
-/* Template Name: Contact  Page */
+/* Template Name: Contact Page */
 
 /**
 
@@ -26,7 +26,6 @@ get_header();
 
 ?>
 
-
 <!-- Main Container Starts -->
 <div class="main-container">
     <!-- Contact Form Starts -->
@@ -48,22 +47,19 @@ get_header();
                         <div class="touch-box">
                             <div class="touch-info">
                                 <div class="touch-img">
-                                    <img src="./img/touch1.svg" alt="Contact Us" width="100%" height="100%"
-                                        loading="lazy" />
+                                    <img src="<?php bloginfo('template_url'); ?>/assets/img/touch1.svg" alt="Contact Us" width="100%" height="100%" loading="lazy" />
                                 </div>
                                 <a href="tel:1800 572 6667">1800 572 6667</a>
                             </div>
                             <div class="touch-info">
                                 <div class="touch-img">
-                                    <img src="./img/touch2.svg" alt="Contact Us" width="100%" height="100%"
-                                        loading="lazy" />
+                                    <img src="<?php bloginfo('template_url'); ?>/assets/img/touch2.svg" alt="Contact Us" width="100%" height="100%" loading="lazy" />
                                 </div>
                                 <a href="mailto:info@jetpooling.com">info@jetpooling.com</a>
                             </div>
                             <div class="touch-info">
                                 <div class="touch-img">
-                                    <img src="./img/touch3.svg" alt="Contact Us" width="100%" height="100%"
-                                        loading="lazy" />
+                                    <img src="<?php bloginfo('template_url'); ?>/assets/img/touch3.svg" alt="Contact Us" width="100%" height="100%" loading="lazy" />
                                 </div>
                                 <p>
                                     Lane C8/2, 124E Central Avenue, Sainik Farms, South Delhi,
@@ -74,26 +70,22 @@ get_header();
                         <div class="social-wrap">
                             <a href="" class="social-box">
                                 <div class="social-img">
-                                    <img src="./img/social1.svg" alt="Find Us" width="100%" height="100%"
-                                        loading="lazy" />
+                                    <img src="<?php bloginfo('template_url'); ?>/assets/img/social1.svg" alt="Find Us" width="100%" height="100%" loading="lazy" />
                                 </div>
                             </a>
                             <a href="" class="social-box">
                                 <div class="social-img">
-                                    <img src="./img/social2.svg" alt="Find Us" width="100%" height="100%"
-                                        loading="lazy" />
+                                    <img src="<?php bloginfo('template_url'); ?>/assets/img/social2.svg" alt="Find Us" width="100%" height="100%" loading="lazy" />
                                 </div>
                             </a>
                             <a href="" class="social-box">
                                 <div class="social-img">
-                                    <img src="./img/social3.svg" alt="Find Us" width="100%" height="100%"
-                                        loading="lazy" />
+                                    <img src="<?php bloginfo('template_url'); ?>/assets/img/social3.svg" alt="Find Us" width="100%" height="100%" loading="lazy" />
                                 </div>
                             </a>
                             <a href="" class="social-box">
                                 <div class="social-img">
-                                    <img src="./img/social4.svg" alt="Find Us" width="100%" height="100%"
-                                        loading="lazy" />
+                                    <img src="<?php bloginfo('template_url'); ?>/assets/img/social4.svg" alt="Find Us" width="100%" height="100%" loading="lazy" />
                                 </div>
                             </a>
                         </div>
@@ -105,35 +97,31 @@ get_header();
                             <div class="w100">
                                 <div class="form-grp">
                                     <p class="form-label">name</p>
-                                    <input class="form-field" type="text" id="full-name" name="full-name" required
-                                        placeholder="Robin Holmes" />
+                                    <input class="form-field" type="text" id="full-name" name="full-name" required placeholder="Robin Holmes" />
                                 </div>
                             </div>
                             <div class="w100">
                                 <div class="form-grp">
                                     <p class="form-label">contact</p>
-                                    <input class="form-field" type="number" id="phone-no" name="phone-no" required
-                                        placeholder="+91 8876 873 876" />
+                                    <input class="form-field" type="number" id="phone-no" name="phone-no" required placeholder="+91 8876 873 876" />
                                 </div>
                             </div>
                             <div class="w100">
                                 <div class="form-grp">
                                     <p class="form-label">email</p>
-                                    <input class="form-field" type="email" id="email" name="email" required
-                                        placeholder="robinholmes@hotmail.com" />
+                                    <input class="form-field" type="email" id="email" name="email" required placeholder="robinholmes@hotmail.com" />
                                 </div>
                             </div>
                             <div class="w100">
                                 <div class="form-grp form-textarea-group">
                                     <p class="form-label">message</p>
-                                    <textarea class="form-field" type="text" id="message" name="message" required
-                                        placeholder="Type message here..."></textarea>
+                                    <textarea class="form-field" type="text" id="message" name="message" required placeholder="Type message here..."></textarea>
                                 </div>
                             </div>
 
                             <button class="button white book-seat">
                                 <span>Book seats</span>
-                                <img src="./img/arrow_back.svg" alt="" />
+                                <img src="<?php bloginfo('template_url'); ?>/assets/img/arrow_back.svg" alt="" />
                             </button>
                         </form>
                     </div>

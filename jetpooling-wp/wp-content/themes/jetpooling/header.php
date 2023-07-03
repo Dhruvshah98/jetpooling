@@ -9,7 +9,7 @@
 
 <body <?php body_class(); ?>>
     <?php wp_body_open(); ?>
-    <header id="header">
+    <header id="header" class="<?php if (!is_page_template('landing.php')) : ?> black-txt <?php endif; ?>">
         <div class="header-box">
             <div class="container">
                 <ul class="header-list">
