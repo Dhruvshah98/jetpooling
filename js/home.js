@@ -87,3 +87,32 @@ var swipertesti = new Swiper(".testi-swiper", {
     },
   },
 });
+
+
+if (screen.width < 770) {
+  $(".fleet-pointers").hide();
+  $(".fleet-pointers:first").show();
+
+  /* if in tab mode */
+  $(".tabs li").click(function () {
+    $(".fleet-pointers").hide();
+    var activeTab = $(this).attr("rel");
+    $("#" + activeTab).fadeIn();
+
+    $(".tabs li").addClass("line");
+    $(this).removeClass("line");
+  });
+} else {
+  $(".fleet-pointers").hide();
+  $(".fleet-pointers:first").show();
+
+  /* if in tab mode */
+  $(".tabs li").click(function () {
+    $(".fleet-pointers").hide();
+    var activeTab = $(this).attr("rel");
+    $("#" + activeTab).fadeIn();
+
+    $(".tabs li").addClass("line");
+    $(this).removeClass("line");
+  });
+}
