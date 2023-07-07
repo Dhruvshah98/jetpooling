@@ -33,8 +33,8 @@ get_header();
             <img src="<?php bloginfo('template_url'); ?>/assets/img/banner-bg.jpg" alt="">
 
             <!-- <video autoplay muted playsinline>
-      <source src="movie.mp4" type="video/mp4">
-    </video> -->
+        <source src="movie.mp4" type="video/mp4">
+        </video> -->
         </div>
         <div class="container">
             <div class="banner-txt">

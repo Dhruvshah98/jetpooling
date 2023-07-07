@@ -48,11 +48,13 @@ get_header();
                                     <img src="<?php bloginfo('template_url'); ?>/assets/img/water-sports.jpg" alt="" />
                                 </div>
                             </div>
+
                             <div class="swiper-slide">
                                 <div class="alternate-img">
                                     <img src="<?php bloginfo('template_url'); ?>/assets/img/water-sports.jpg" alt="" />
                                 </div>
                             </div>
+                            
                         </div>
                         <div class="comm-nav">
                             <div class="s-nav-prev comm-prev black"></div>
