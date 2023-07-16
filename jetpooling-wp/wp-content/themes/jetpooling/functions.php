@@ -45,15 +45,31 @@ add_action('wp_footer', 'blankslate_footer');
 
 function blankslate_footer()
 {
+
+
+    wp_enqueue_script('jquery-js', 'https://code.jquery.com/jquery-3.6.0.min.js', array(), 1.1, true);
     wp_enqueue_script('swiper-bundle-js', 'https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.3.2/swiper-bundle.min.js', array(), 1.1, true);
+
+
+
+    wp_enqueue_script('common-js',  get_template_directory_uri() . '/assets/js/common.js', array(), 1.1, true);
 
     if (is_page_template('landing.php')) {
         wp_enqueue_script('home',  get_template_directory_uri() . '/assets/js/home.js', array(), 1.1, true);
     }
-    wp_enqueue_script('common-js',  get_template_directory_uri() . '/assets/js/common.js', array(), 1.1, true);
+
+    if (is_page_template('experiences.php')) {
+        wp_enqueue_script('experince',  get_template_directory_uri() . '/assets/js/experince.js', array(), 1.1, true);
+    }
+
+    if (is_page_template('about.php')) {
+        wp_enqueue_script('about',  get_template_directory_uri() . '/assets/js/about.js', array(), 1.1, true);
+    }
+
+
 
 ?>
-    <script>
+<!-- <script>
         jQuery(document).ready(function($) {
             var deviceAgent = navigator.userAgent.toLowerCase();
             if (deviceAgent.match(/(iphone|ipod|ipad)/)) {
@@ -76,7 +92,7 @@ function blankslate_footer()
                 $("html").addClass("opera");
             }
         });
-    </script>
+    </script> -->
 <?php
 }
 add_filter('document_title_separator', 'blankslate_document_title_separator');
@@ -178,8 +194,8 @@ function blankslate_enqueue_comment_reply_script()
 function blankslate_custom_pings($comment)
 {
 ?>
-    <li <?php comment_class(); ?> id="li-comment-<?php comment_ID(); ?>"><?php echo esc_url(comment_author_link()); ?>
-    </li>
+<li <?php comment_class(); ?> id="li-comment-<?php comment_ID(); ?>"><?php echo esc_url(comment_author_link()); ?>
+</li>
 <?php
 }
 add_filter('get_comments_number', 'blankslate_comment_count', 0);

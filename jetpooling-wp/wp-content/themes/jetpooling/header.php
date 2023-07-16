@@ -9,23 +9,23 @@
 
 <body <?php body_class(); ?>>
     <?php wp_body_open(); ?>
-    <header id="header">
+    <header id="header" class="<?php if (!is_page_template('landing.php')) : ?> black-txt <?php endif; ?>">
         <div class="header-box">
             <div class="container">
                 <ul class="header-list">
                     <li><a href="#">Charters</a></li>
-                    <li><a href="">Experiences</a></li>
-                    <li><a href="">About us</a></li>
+                    <li><a href="<?php echo get_site_url().'/experiences/'; ?>">Experiences</a></li>
+                    <li><a href="<?php echo get_site_url().'/about-us/'; ?>">About us</a></li>
                 </ul>
                 <div class="logoBox">
-                    <a class="logo" href="./index.html">
-                        <img src="<?php bloginfo('template_url'); ?>/assets/himg/logo.svg" alt="Logo" />
+                    <a class="logo" href="<?php echo get_site_url().'/'; ?>">
+                        <img src="<?php bloginfo('template_url'); ?>/assets/img/logo.svg" alt="Logo" />
                     </a>
                 </div>
                 <div class="menuBtn">
                     <ul class="header-list">
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="">Book now</a></li>
+                        <li><a href="<?php echo get_site_url().'/contact/'; ?>">Contact</a></li>
+                        <li><a href="<?php echo get_site_url().'/about-us/'; ?>">Book now</a></li>
                     </ul>
                     <div class="menu side-menu">
                         <a href="javascript:void(0)" class="js-nav-toggle">

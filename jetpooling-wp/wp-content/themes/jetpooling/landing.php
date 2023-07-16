@@ -33,8 +33,8 @@ get_header();
             <img src="<?php bloginfo('template_url'); ?>/assets/img/banner-bg.jpg" alt="">
 
             <!-- <video autoplay muted playsinline>
-      <source src="movie.mp4" type="video/mp4">
-    </video> -->
+        <source src="movie.mp4" type="video/mp4">
+        </video> -->
         </div>
         <div class="container">
             <div class="banner-txt">
@@ -165,12 +165,9 @@ get_header();
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                     <p class="comm-txt">Discover the ecological jewel of Seychelles and private island
-                                        home to Six
-                                        Senses Zil
-                                        Pasyon. Step in tune with nature, swim with turtles and enjoy an intimate
-                                        destination that is an
-                                        ode to
-                                        well being and absolute comfort.</p>
+                                        home to Six Senses Zil Pasyon. Step in tune with nature, swim with turtles and
+                                        enjoy an intimate destination that is an ode to well being and absolute comfort.
+                                    </p>
                                     <a class="button" href="">Explore more</a>
                                 </div>
                                 <div class="swiper-slide">
@@ -388,12 +385,9 @@ get_header();
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                     <p class="comm-txt white">Discover the ecological jewel of Seychelles and private
-                                        island home to Six
-                                        Senses Zil
-                                        Pasyon. Step in tune with nature, swim with turtles and enjoy an intimate
-                                        destination that is an
-                                        ode to
-                                        well being and absolute comfort.</p>
+                                        island home to Six Senses Zil Pasyon. Step in tune with nature, swim with
+                                        turtles and enjoy an intimate destination that is an ode to well being and
+                                        absolute comfort.</p>
                                     <a class="button white" href="">Explore more</a>
                                 </div>
                                 <div class="swiper-slide">
@@ -444,12 +438,9 @@ get_header();
                                 <div class="testi-box">
                                     <p class="comm-txt-2">Incredible experience with Jetpooling</p>
                                     <p class="comm-txt">Whether you're flying for business or pleasure, we'll cater to
-                                        your every need
-                                        and
-                                        ensure your journey is as comfortable and stress-free as possible. Reach out to
-                                        us today to learn
-                                        more and
-                                        experience the difference of Jetpooling.</p>
+                                        your every need and ensure your journey is as comfortable and stress-free as
+                                        possible. Reach out to us today to learn more and experience the difference of
+                                        Jetpooling.</p>
                                     <div class="testi-name">
                                         <h4>Samantha Puth</h4>
                                         <h5>Mumbai, India</h5>
