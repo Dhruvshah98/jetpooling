@@ -36,44 +36,46 @@ get_header();
                     <div class="contact-info">
                         <div class="comm-head-wrap">
                             <div class="small-head">
-                                <h2>contact form</h2>
+                                <h2><?php echo get_field('small_text')?></h2>
                             </div>
-                            <h2 class="comm-head-2">Ask us anything</h2>
+                            <h2 class="comm-head-2"><?php echo get_field('title')?></h2>
                         </div>
                         <p class="comm-txt">
-                            For all queries & booking related information, drop us a
-                            message & we’ll get back to you in a jiffy...
+                        <?php echo get_field('content')?>
                         </p>
                         <div class="touch-box">
                             <div class="touch-info">
                                 <div class="touch-img">
                                     <img src="<?php bloginfo('template_url'); ?>/assets/img/touch1.svg" alt="Contact Us" width="100%" height="100%" loading="lazy" />
                                 </div>
-                                <a href="tel:1800 572 6667">1800 572 6667</a>
+                                <a href="tel:<?php echo get_field('contact_number')?>"><?php echo get_field('contact_number')?></a>
                             </div>
                             <div class="touch-info">
                                 <div class="touch-img">
                                     <img src="<?php bloginfo('template_url'); ?>/assets/img/touch2.svg" alt="Contact Us" width="100%" height="100%" loading="lazy" />
                                 </div>
-                                <a href="mailto:info@jetpooling.com">info@jetpooling.com</a>
+                                <a href="mailto:<?php echo get_field('email')?>"><?php echo get_field('email')?></a>
                             </div>
                             <div class="touch-info">
                                 <div class="touch-img">
                                     <img src="<?php bloginfo('template_url'); ?>/assets/img/touch3.svg" alt="Contact Us" width="100%" height="100%" loading="lazy" />
                                 </div>
                                 <p>
-                                    Lane C8/2, 124E Central Avenue, Sainik Farms, South Delhi,
-                                    New Delhi, India, 110062
+                                <?php echo get_field('address')?>
                                 </p>
                             </div>
                         </div>
                         <div class="social-wrap">
-                            <a href="" class="social-box">
+                        <?php if( have_rows('social_media') ): ?>
+                                        <?php while( have_rows('social_media') ): the_row(); ?>
+                            <a href="<?php the_sub_field('icon'); ?>" class="social-box">
                                 <div class="social-img">
-                                    <img src="<?php bloginfo('template_url'); ?>/assets/img/social1.svg" alt="Find Us" width="100%" height="100%" loading="lazy" />
+                                    <img src="<?php the_sub_field('icon'); ?>" alt="Find Us" width="100%" height="100%" loading="lazy" />
                                 </div>
                             </a>
-                            <a href="" class="social-box">
+                            <?php endwhile; ?>
+                                    <?php endif; ?>
+                            <!-- <a href="" class="social-box">
                                 <div class="social-img">
                                     <img src="<?php bloginfo('template_url'); ?>/assets/img/social2.svg" alt="Find Us" width="100%" height="100%" loading="lazy" />
                                 </div>
@@ -87,14 +89,14 @@ get_header();
                                 <div class="social-img">
                                     <img src="<?php bloginfo('template_url'); ?>/assets/img/social4.svg" alt="Find Us" width="100%" height="100%" loading="lazy" />
                                 </div>
-                            </a>
+                            </a> -->
                         </div>
                     </div>
                 </div>
                 <div class="f-col">
                     <div class="contact-box black-bg">
-                        <form action="" id="bokkSeat">
-                            <div class="w100">
+                        <div id="bokkSeat">
+                            <!-- <div class="w100">
                                 <div class="form-grp">
                                     <p class="form-label">name</p>
                                     <input class="form-field" type="text" id="full-name" name="full-name" required placeholder="Robin Holmes" />
@@ -122,8 +124,9 @@ get_header();
                             <button class="button white book-seat">
                                 <span>Book seats</span>
                                 <img src="<?php bloginfo('template_url'); ?>/assets/img/arrow_back.svg" alt="" />
-                            </button>
-                        </form>
+                            </button> -->
+                            <?php echo  do_shortcode('[contact-form-7 id="155" title="Contact"]')?>
+</div>
                     </div>
                 </div>
             </div>

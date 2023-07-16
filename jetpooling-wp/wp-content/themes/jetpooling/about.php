@@ -179,7 +179,17 @@ get_header(); ?>
                     <div class="f-col">
                         <div class="exp-swiper swiper">
                             <div class="swiper-wrapper">
+                            <?php if( have_rows('founder_section') ): ?>
+                                        <?php while( have_rows('founder_section') ): the_row(); ?>
+                                  
                                 <div class="swiper-slide">
+                                    <div class="alternate-img">
+                                        <img src="<?php the_sub_field('image'); ?>" alt="" />
+                                    </div>
+                                </div>
+                                <?php endwhile; ?>
+                                    <?php endif; ?>
+                                <!-- <div class="swiper-slide">
                                     <div class="alternate-img">
                                         <img src="<?php bloginfo('template_url'); ?>/assets/img/team.png" alt="" />
                                     </div>
@@ -188,12 +198,7 @@ get_header(); ?>
                                     <div class="alternate-img">
                                         <img src="<?php bloginfo('template_url'); ?>/assets/img/team.png" alt="" />
                                     </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="alternate-img">
-                                        <img src="<?php bloginfo('template_url'); ?>/assets/img/team.png" alt="" />
-                                    </div>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
@@ -201,7 +206,21 @@ get_header(); ?>
                         <div class="alternate-txt">
                             <div class="swiper swiper-exp-txt">
                                 <div class="swiper-wrapper">
+                                    <?php if( have_rows('founder_section') ): ?>
+                                        <?php while( have_rows('founder_section') ): the_row(); ?>
                                     <div class="swiper-slide">
+                                        <div class="comm-head-wrap">
+                                            <div class="small-head white">
+                                                <h2><?php the_sub_field('dsignation'); ?></h2>
+                                            </div>
+                                            <h2 class="comm-head-2 white"><?php the_sub_field('name'); ?></h2>
+                                        </div>
+                                        <p class="comm-txt white"><?php the_sub_field('about'); ?></p>
+                                    </div>
+                                        <?php endwhile; ?>
+                                    <?php endif; ?>
+                                      
+                                    <!-- <div class="swiper-slide">
                                         <div class="comm-head-wrap">
                                             <div class="small-head white">
                                                 <h2>FOUNDER</h2>
@@ -209,7 +228,14 @@ get_header(); ?>
                                             <h2 class="comm-head-2 white">Abhaye Gupta</h2>
                                         </div>
                                         <p class="comm-txt white">
-                                            A New Delhi based young entrepreneur and globetrotter who believes in adding a big dollop of imagination to the process of premium vacations. <br /> Born and bred in New Delhi, Abhaye runs one of India’s premium Home Decor Manufacturing and Export company’s - EIC. His work takes him to places where he discovered his undiminished love for travel and strong desire to explore a world of luxury.
+                                            A New Delhi based young entrepreneur and globetrotter
+                                            who believes in adding a big dollop of imagination to
+                                            the process of premium vacations. <br />
+                                            Born and bred in New Delhi, Abhaye runs one of India’s
+                                            premium Home Decor Manufacturing and Export company’s
+                                            - EIC. His work takes him to places where he
+                                            discovered his undiminished love for travel and strong
+                                            desire to explore a world of luxury.
                                         </p>
                                     </div>
                                     <div class="swiper-slide">
@@ -229,25 +255,7 @@ get_header(); ?>
                                             discovered his undiminished love for travel and strong
                                             desire to explore a world of luxury.
                                         </p>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="comm-head-wrap">
-                                            <div class="small-head white">
-                                                <h2>FOUNDER</h2>
-                                            </div>
-                                            <h2 class="comm-head-2 white">Abhaye Gupta</h2>
-                                        </div>
-                                        <p class="comm-txt white">
-                                            A New Delhi based young entrepreneur and globetrotter
-                                            who believes in adding a big dollop of imagination to
-                                            the process of premium vacations. <br />
-                                            Born and bred in New Delhi, Abhaye runs one of India’s
-                                            premium Home Decor Manufacturing and Export company’s
-                                            - EIC. His work takes him to places where he
-                                            discovered his undiminished love for travel and strong
-                                            desire to explore a world of luxury.
-                                        </p>
-                                    </div>
+                                    </div> -->
                                 </div>
                             </div>
                             <div class="comm-nav">
