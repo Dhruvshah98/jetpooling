@@ -38,64 +38,76 @@ get_header(); ?>
     <!-- About Heade Ends -->
 
     <!-- Get to know us better starts -->
+    <?php
+    $about_section_data = get_field('about_section');
+    if( $about_section_data ): ?>
     <div class="comm-section better-sec alt-wrap">
         <div class="container">
             <div class="small-head">
-                <h2>ABOUT</h2>
+                <h2><?php echo $about_section_data['small_text']; ?></h2>
             </div>
             <div class="f-row f-2 f-990-1">
                 <div class="f-col">
                     <div class="alternate-txt">
                         <div class="comm-head-wrap">
-                            <h2 class="comm-head-2">Get to know us better</h2>
+                            <h2 class="comm-head-2"><?php echo $about_section_data['title']; ?></h2>
                         </div>
                     </div>
                 </div>
                 <div class="f-col">
                     <p class="comm-txt">
-                        We provide one of a kind experience & an innovative solution to
-                        privatized full-suite travel to some luxury destinations around
-                        the globe, allowing all individuals to experience comfort and
-                        peace of mind at the highest level..
+                    <?php echo $about_section_data['content']; ?>
                     </p>
-                    <a class="button" href="">Explore more</a>
+                    <a class="button" href="<?php echo $about_section_data['cta']; ?>">Explore more</a>
                 </div>
             </div>
         </div>
     </div>
+    <?php endif; ?>
+
     <!-- Get to know us better ends -->
 
     <!-- OUR PROMISE Starts -->
+    <?php
+    $our_promise_section_data = get_field('our_promise_section');
+    if( $our_promise_section_data ): ?>
     <div class="comm-section black-bg">
         <div class="container">
             <div class="promise-wrap">
                 <div class="promise-left">
                     <div class="comm-head-wrap">
                         <div class="small-head white">
-                            <h2>OUR PROMISE</h2>
+                            <h2><?php echo $our_promise_section_data['small_text']; ?></h2>
                         </div>
-                        <h2 class="comm-head-2 white">One size does not fit all</h2>
+                        <h2 class="comm-head-2 white"><?php echo $our_promise_section_data['title']; ?></h2>
                     </div>
                     <p class="comm-txt white">
-                        We deeply resonate with this philosophy and therefore understand
-                        the personal &amp; unique approach each of us has to travelling.
+                        <?php echo $our_promise_section_data['sub_title']; ?>
                     </p>
-                    <a href="" class="button white">Learn more</a>
+                    <a href="<?php echo $our_promise_section_data['cta']; ?>" class="button white">Learn more</a>
                 </div>
                 <div class="promise-right">
+
                     <div class="f-row f-2">
+                    <?php
+                            if( have_rows('our_promise_section') ): while ( have_rows('our_promise_section') ) : the_row(); 
+                                if( have_rows('our_promise_cards') ): while ( have_rows('our_promise_cards') ) : the_row();       ?>
                         <div class="f-col">
                             <div class="promise-box">
                                 <div class="promise-icon">
-                                    <img src="<?php bloginfo('template_url'); ?>/assets/img/pr-1.svg" alt="" />
+                                    <img src="<?php  echo get_sub_field('icon'); ?>" alt="" />
                                 </div>
-                                <h3>Peace of mind</h3>
+                                <h3><?php  echo get_sub_field('title'); ?></h3>
                                 <p>
-                                    Guest safety and convenience is our number one priority.
+                                <?php  echo get_sub_field('sub_title'); ?>
                                 </p>
                             </div>
                         </div>
-                        <div class="f-col">
+                        <?php  endwhile; endif;
+                            endwhile; endif;
+                            ?>
+                        
+                        <!-- <div class="f-col">
                             <div class="promise-box">
                                 <div class="promise-icon">
                                     <img src="<?php bloginfo('template_url'); ?>/assets/img/pr-2.svg" alt="" />
@@ -130,12 +142,14 @@ get_header(); ?>
                                     departure.
                                 </p>
                             </div>
-                        </div>
+                        </div> -->
+
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <?php endif; ?>
     <!-- OUR PROMISE Ends -->
 
     <!-- Lines Starts -->
@@ -195,14 +209,7 @@ get_header(); ?>
                                             <h2 class="comm-head-2 white">Abhaye Gupta</h2>
                                         </div>
                                         <p class="comm-txt white">
-                                            A New Delhi based young entrepreneur and globetrotter
-                                            who believes in adding a big dollop of imagination to
-                                            the process of premium vacations. <br />
-                                            Born and bred in New Delhi, Abhaye runs one of India’s
-                                            premium Home Decor Manufacturing and Export company’s
-                                            - EIC. His work takes him to places where he
-                                            discovered his undiminished love for travel and strong
-                                            desire to explore a world of luxury.
+                                            A New Delhi based young entrepreneur and globetrotter who believes in adding a big dollop of imagination to the process of premium vacations. <br /> Born and bred in New Delhi, Abhaye runs one of India’s premium Home Decor Manufacturing and Export company’s - EIC. His work takes him to places where he discovered his undiminished love for travel and strong desire to explore a world of luxury.
                                         </p>
                                     </div>
                                     <div class="swiper-slide">
