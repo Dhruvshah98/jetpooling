@@ -21,7 +21,9 @@
   width: 170px;
 }
 .logoBox {
-  // flex: 1;
+  flex: 1;
+  display: flex;
+  justify-content: center;
 }
 
 .header-box {
@@ -107,9 +109,14 @@
 .menuBtn {
   display: flex;
   align-items: center;
+  flex: 1;
+  .header-list {
+    justify-content: flex-end;
+  }
 }
 
 .header-list {
+  flex: 1;
   .flex(flex-start, center);
   // flex: 1;
   li {
@@ -120,6 +127,20 @@
       color: #fff;
       font-weight: 500;
       text-transform: uppercase;
+
+      &.active {
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+.black-txt {
+  .header-list {
+    li {
+      a {
+        color: #000000;
+      }
     }
   }
 }
@@ -130,6 +151,10 @@
 
   .header-box .container {
     height: var(--headerFixedHeight);
+  }
+
+  .header-list li a {
+    color: #000;
   }
 }
 
