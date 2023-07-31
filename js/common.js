@@ -40,8 +40,10 @@ $('#header').load('header.html', function () {
 
 $('#footer').load('footer.html');
 
-AOS.init();
-
+AOS.init({
+    duration: 800,
+    easing: 'ease',
+});
 /* common tab start */
 $('.tabgroup > div').hide();
 $('.tabgroup > div:first-of-type').show();

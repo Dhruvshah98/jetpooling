@@ -119,6 +119,7 @@ if (screen.width < 770) {
   /* if in tab mode */
   $(".tabs li").click(function () {
     $(".fleet-pointers").hide();
+
     var activeTab = $(this).attr("rel");
     $("#" + activeTab).fadeIn();
 

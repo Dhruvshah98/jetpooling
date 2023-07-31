@@ -14,7 +14,6 @@ function fixedHeader() {
 
 
 
-
 $(window).scroll(function (e) {
     fixedHeader();
 });
@@ -41,6 +40,10 @@ $('#header').load('header.html', function () {
 
 $('#footer').load('footer.html');
 
+AOS.init({
+    duration: 800,
+    easing: 'ease',
+});
 
 /* common tab start */
 $('.tabgroup > div').hide();
