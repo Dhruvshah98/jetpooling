@@ -31,7 +31,8 @@ get_header(); ?>
     <secton class="comm-section abt-head-img black-bg">
         <div class="container">
             <div class="about-img">
-                <img src="<?php bloginfo('template_url'); ?>/assets/img/abt-img.png" alt="Get to know us better" width="100%" height="100%" loading="lazy" />
+                <img src="<?php bloginfo('template_url'); ?>/assets/img/abt-img.png" alt="Get to know us better"
+                    width="100%" height="100%" loading="lazy" />
             </div>
         </div>
     </secton>
@@ -43,20 +44,20 @@ get_header(); ?>
     if( $about_section_data ): ?>
     <div class="comm-section better-sec alt-wrap">
         <div class="container">
-            <div class="small-head">
+            <div class="small-head" data-aos="fade-up">
                 <h2><?php echo $about_section_data['small_text']; ?></h2>
             </div>
             <div class="f-row f-2 f-990-1">
-                <div class="f-col">
+                <div class="f-col" data-aos="fade-up">
                     <div class="alternate-txt">
                         <div class="comm-head-wrap">
                             <h2 class="comm-head-2"><?php echo $about_section_data['title']; ?></h2>
                         </div>
                     </div>
                 </div>
-                <div class="f-col">
+                <div class="f-col" data-aos="fade-up">
                     <p class="comm-txt">
-                    <?php echo $about_section_data['content']; ?>
+                        <?php echo $about_section_data['content']; ?>
                     </p>
                     <a class="button" href="<?php echo $about_section_data['cta']; ?>">Explore more</a>
                 </div>
@@ -74,7 +75,7 @@ get_header(); ?>
     <div class="comm-section black-bg">
         <div class="container">
             <div class="promise-wrap">
-                <div class="promise-left">
+                <div class="promise-left" data-aos="fade-up">
                     <div class="comm-head-wrap">
                         <div class="small-head white">
                             <h2><?php echo $our_promise_section_data['small_text']; ?></h2>
@@ -86,10 +87,10 @@ get_header(); ?>
                     </p>
                     <a href="<?php echo $our_promise_section_data['cta']; ?>" class="button white">Learn more</a>
                 </div>
-                <div class="promise-right">
+                <div class="promise-right" data-aos="fade-up">
 
                     <div class="f-row f-2">
-                    <?php
+                        <?php
                             if( have_rows('our_promise_section') ): while ( have_rows('our_promise_section') ) : the_row(); 
                                 if( have_rows('our_promise_cards') ): while ( have_rows('our_promise_cards') ) : the_row();       ?>
                         <div class="f-col">
@@ -99,14 +100,14 @@ get_header(); ?>
                                 </div>
                                 <h3><?php  echo get_sub_field('title'); ?></h3>
                                 <p>
-                                <?php  echo get_sub_field('sub_title'); ?>
+                                    <?php  echo get_sub_field('sub_title'); ?>
                                 </p>
                             </div>
                         </div>
                         <?php  endwhile; endif;
                             endwhile; endif;
                             ?>
-                        
+
                         <!-- <div class="f-col">
                             <div class="promise-box">
                                 <div class="promise-icon">
@@ -154,11 +155,11 @@ get_header(); ?>
 
     <!-- Lines Starts -->
     <div class="comm-section">
-        <div class="lines-bg">
+        <div class="lines-bg" data-aos="zoom-out">
             <img src="<?php bloginfo('template_url'); ?>/assets/img/line-light-bg.png" alt="" />
         </div>
         <div class="container">
-            <div class="lines-txt">
+            <div class="lines-txt" data-aos="fade-up">
                 <p class="comm-txt-2">
                     An initiative of EIC - Envisioned & founded by a duo of seasoned
                     travel enthusiasts with a wealth of experience in the travel,
@@ -176,19 +177,19 @@ get_header(); ?>
         <div class="container">
             <div class="team-wrap">
                 <div class="f-row f-2 f-990-1">
-                    <div class="f-col">
+                    <div class="f-col" data-aos="fade-up">
                         <div class="exp-swiper swiper">
                             <div class="swiper-wrapper">
-                            <?php if( have_rows('founder_section') ): ?>
-                                        <?php while( have_rows('founder_section') ): the_row(); ?>
-                                  
+                                <?php if( have_rows('founder_section') ): ?>
+                                <?php while( have_rows('founder_section') ): the_row(); ?>
+
                                 <div class="swiper-slide">
                                     <div class="alternate-img">
                                         <img src="<?php the_sub_field('image'); ?>" alt="" />
                                     </div>
                                 </div>
                                 <?php endwhile; ?>
-                                    <?php endif; ?>
+                                <?php endif; ?>
                                 <!-- <div class="swiper-slide">
                                     <div class="alternate-img">
                                         <img src="<?php bloginfo('template_url'); ?>/assets/img/team.png" alt="" />
@@ -202,12 +203,12 @@ get_header(); ?>
                             </div>
                         </div>
                     </div>
-                    <div class="f-col">
+                    <div class="f-col" data-aos="fade-up">
                         <div class="alternate-txt">
                             <div class="swiper swiper-exp-txt">
                                 <div class="swiper-wrapper">
                                     <?php if( have_rows('founder_section') ): ?>
-                                        <?php while( have_rows('founder_section') ): the_row(); ?>
+                                    <?php while( have_rows('founder_section') ): the_row(); ?>
                                     <div class="swiper-slide">
                                         <div class="comm-head-wrap">
                                             <div class="small-head white">
@@ -217,9 +218,9 @@ get_header(); ?>
                                         </div>
                                         <p class="comm-txt white"><?php the_sub_field('about'); ?></p>
                                     </div>
-                                        <?php endwhile; ?>
+                                    <?php endwhile; ?>
                                     <?php endif; ?>
-                                      
+
                                     <!-- <div class="swiper-slide">
                                         <div class="comm-head-wrap">
                                             <div class="small-head white">

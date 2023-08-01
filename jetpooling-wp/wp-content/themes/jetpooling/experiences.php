@@ -33,7 +33,7 @@ get_header();
     <div class="comm-section alt-wrap right-image">
         <div class="container">
             <div class="f-row f-2 f-990-1">
-                <div class="f-col">
+                <div class="f-col" data-aos="fade-up">
                     <div class="services-swiper swiper">
                         <div class="swiper-wrapper">
 
@@ -54,7 +54,7 @@ get_header();
                                     <img src="<?php bloginfo('template_url'); ?>/assets/img/water-sports.jpg" alt="" />
                                 </div>
                             </div>
-                            
+
                         </div>
                         <div class="comm-nav">
                             <div class="s-nav-prev comm-prev black"></div>
@@ -62,7 +62,7 @@ get_header();
                         </div>
                     </div>
                 </div>
-                <div class="f-col">
+                <div class="f-col" data-aos="fade-up">
                     <div class="alternate-txt">
                         <div class="comm-head-wrap">
                             <div class="small-head">

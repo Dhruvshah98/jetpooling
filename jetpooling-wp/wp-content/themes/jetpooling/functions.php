@@ -49,6 +49,8 @@ function blankslate_footer()
 
     wp_enqueue_script('jquery-js', 'https://code.jquery.com/jquery-3.6.0.min.js', array(), 1.1, true);
     wp_enqueue_script('swiper-bundle-js', 'https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.3.2/swiper-bundle.min.js', array(), 1.1, true);
+    wp_enqueue_script('aos-js', 'https://unpkg.com/aos@2.3.1/dist/aos.js', array(), 1.1, true);
+
 
 
 
