@@ -32,7 +32,7 @@ get_header();
                 $banner_section_data = get_field('banner_section');
                 if( $banner_section_data ): ?>
     <div class="banner-wrap">
-        <div class="banner-bg">
+        <div class="banner-bg" data-aos="zoom-out">
             <img src="<?php echo $banner_section_data['banner_image']; ?>" alt="">
 
             <!-- <video autoplay muted playsinline>
@@ -40,7 +40,7 @@ get_header();
         </video> -->
         </div>
         <div class="container">
-            <div class="banner-txt">
+            <div class="banner-txt" data-aos="fade-up">
                 <div class="small-head white">
                     <h2><?php echo $banner_section_data['title']; ?></h2>
                 </div>
@@ -60,18 +60,18 @@ get_header();
         <div class="container">
             <div class="f-row f-2 f-990-1">
                 <div class="f-col">
-                    <div class="alternate-img">
+                    <div class="alternate-img" data-aos="fade-up">
                         <img src="<?php echo $about_section_data['banner_image']; ?>" alt="">
                     </div>
                 </div>
                 <div class="f-col">
-                    <div class="alternate-txt">
+                    <div class="alternate-txt" data-aos="fade-up">
                         <div class="comm-head-wrap">
                             <div class="small-head">
                                 <h2><?php echo $about_section_data['small_text']; ?></h2>
                             </div>
                             <h2 class="comm-head-2">
-                            <?php echo $about_section_data['title']; ?>
+                                <?php echo $about_section_data['title']; ?>
                             </h2>
                         </div>
                         <p class="comm-txt"> <?php echo $about_section_data['content']; ?></p>
@@ -88,27 +88,27 @@ get_header();
     <div class="comm-section black-bg">
         <div class="container">
             <div class="promise-wrap">
-                <div class="promise-left">
+                <div class="promise-left" data-aos="fade-up">
                     <div class="comm-head-wrap">
                         <div class="small-head white">
                             <h2><?php echo $our_promise_section_data['small_text']; ?></h2>
                         </div>
                         <h2 class="comm-head-2 white">
-                        <?php echo $our_promise_section_data['title']; ?>
+                            <?php echo $our_promise_section_data['title']; ?>
                         </h2>
                     </div>
                     <p class="comm-txt white">
-                    <?php echo $our_promise_section_data['sub_title']; ?>
+                        <?php echo $our_promise_section_data['sub_title']; ?>
                     </p>
                     <a href="<?php echo $our_promise_section_data['cta']; ?>" class="button white">Learn more</a>
                 </div>
                 <div class="promise-right">
                     <div class="f-row f-2">
-                    <?php
+                        <?php
                             if( have_rows('our_promise_section') ): while ( have_rows('our_promise_section') ) : the_row(); 
                                 if( have_rows('our_promise_cards') ): while ( have_rows('our_promise_cards') ) : the_row();       ?>
                         <div class="f-col">
-                            <div class="promise-box">
+                            <div class="promise-box" data-aos="fade-up">
                                 <div class="promise-icon">
                                     <img src="<?php  echo get_sub_field('icon'); ?>" alt="">
                                 </div>
@@ -158,19 +158,19 @@ get_header();
     <div class="comm-section alt-wrap">
         <div class="container">
             <div class="f-row f-2 f-990-1">
-                <div class="f-col">
+                <div class="f-col" data-aos="fade-up">
                     <div class="alternate-txt">
                         <div class="comm-head-wrap">
                             <div class="small-head">
                                 <h2><?php echo $services_section_data['small_text']; ?></h2>
                             </div>
                             <h2 class="comm-head-2">
-                            <?php echo $services_section_data['title']; ?>
+                                <?php echo $services_section_data['title']; ?>
                             </h2>
                         </div>
                         <div class="swiper swiper-ser-txt">
                             <div class="swiper-wrapper">
-                            <?php
+                                <?php
                             if( have_rows('services_section') ): while ( have_rows('services_section') ) : the_row(); 
                                 if( have_rows('service_cards') ): while ( have_rows('service_cards') ) : the_row();       ?>
                                 <div class="swiper-slide">
@@ -206,10 +206,10 @@ get_header();
                         <div class="pagination-services comm-pagination"></div>
                     </div>
                 </div>
-                <div class="f-col">
+                <div class="f-col" data-aos="fade-up">
                     <div class="services-swiper swiper">
                         <div class="swiper-wrapper">
-                        <?php $i = 1;
+                            <?php $i = 1;
                             if( have_rows('our_promise_section') ): while ( have_rows('our_promise_section') ) : the_row(); 
                                 if( have_rows('our_promise_cards') ): while ( have_rows('our_promise_cards') ) : the_row();       ?>
                             <div class="swiper-slide">
@@ -252,49 +252,49 @@ get_header();
             </div>
         </div>
     </div>
-   
+
     <!-- Lines -->
     <div class="comm-section black-bg">
-        <div class="lines-bg">
+        <div class="lines-bg" data-aos="zoom-out">
             <img src="<?php bloginfo('template_url'); ?>/assets/img/lines-bg.png" alt="">
         </div>
         <div class="container">
-            <div class="lines-txt">
+            <div class="lines-txt" data-aos="fade-up">
                 <p class="comm-txt-2 white">
-                <?php echo $services_section_data['content']; ?>
+                    <?php echo $services_section_data['content']; ?>
                 </p>
             </div>
         </div>
     </div>
     <?php endif; ?>
-    <!-- Fleet -->
 
+    <!-- Fleet -->
     <?php  $our_fleet_data = get_field('our_fleet');
     if( $our_fleet_data ): ?>
     <div class="comm-section">
         <div class="container">
-            <div class="fleet-head">
+            <div class="fleet-head" data-aos="fade-up">
                 <div class="comm-head-wrap">
                     <div class="small-head">
                         <h2><?php echo $our_fleet_data['small_text']; ?></h2>
                     </div>
                     <h2 class="comm-head-2">
-                    <?php echo $our_fleet_data['title']; ?>
+                        <?php echo $our_fleet_data['title']; ?>
                     </h2>
                 </div>
-                <div class="tabs">
+                <div class="tabs" data-aos="fade-up">
                     <ul>
-                        <li class="button">Private Jets</li>
-                        <li class="button line">Helicopters</li>
-                        <li class="button line">Yatch</li>
+                        <li class="button" rel="tab1">Private Jets</li>
+                        <li class="button line" rel="tab2">Helicopters</li>
+                        <li class="button line" rel="tab3">Yatch</li>
                     </ul>
                 </div>
             </div>
-            <div class="fleet-content">
+            <div class="fleet-content" data-aos="fade-up">
                 <div class="tab-content active">
-                    <div class="swiper-fleet-1 swiper">
+                    <div class="swiper-fleet-1 swiper" id="tab1">
                         <div class="swiper-wrapper">
-                        <?php $i = 1;
+                            <?php $i = 1;
                             if( have_rows('our_fleet') ): while ( have_rows('our_fleet') ) : the_row(); 
                                 if( have_rows('slider_images') ): while ( have_rows('slider_images') ) : the_row();       ?>
                             <div class="swiper-slide">
@@ -312,30 +312,6 @@ get_header();
                             <?php $i++; endwhile; endif;
                             endwhile; endif;
                             ?>
-                            <!-- <div class="swiper-slide">
-                                <div class="fleet-img">
-                                    <img src="<?php bloginfo('template_url'); ?>/assets/img/fleet-1.jpg" alt="">
-                                    <div class="service-txt comm-small-title white">
-                                        <div class="fleet-sm-head">
-                                            <h5>01</h5>
-                                            <h5>08 pax</h5>
-                                        </div>
-                                        <h4 class="comm-txt-2 white">Private Jet Charter</h4>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="fleet-img">
-                                    <img src="<?php bloginfo('template_url'); ?>/assets/img/fleet-1.jpg" alt="">
-                                    <div class="service-txt comm-small-title white">
-                                        <div class="fleet-sm-head">
-                                            <h5>01</h5>
-                                            <h5>08 pax</h5>
-                                        </div>
-                                        <h4 class="comm-txt-2 white">Private Jet Charter</h4>
-                                    </div>
-                                </div>
-                            </div> -->
                         </div>
 
                         <div class="fleet-indicators">
@@ -358,10 +334,10 @@ get_header();
     <div class="comm-section alt-wrap black-bg">
         <div class="container">
             <div class="f-row f-2 f-990-1">
-                <div class="f-col">
+                <div class="f-col" data-aos="fade-up">
                     <div class="exp-swiper swiper">
                         <div class="swiper-wrapper">
-                        <?php $i =1;
+                            <?php $i =1;
                             if( have_rows('experiences_section') ): while ( have_rows('experiences_section') ) : the_row(); 
                                 if( have_rows('experiences_cards') ): while ( have_rows('experiences_cards') ) : the_row();       ?>
                             <div class="swiper-slide">
@@ -401,19 +377,19 @@ get_header();
                         </div>
                     </div>
                 </div>
-                <div class="f-col">
+                <div class="f-col" data-aos="fade-up">
                     <div class="alternate-txt">
                         <div class="comm-head-wrap">
                             <div class="small-head white">
                                 <h2><?php echo $experiences_section_data['small_text']; ?></h2>
                             </div>
                             <h2 class="comm-head-2 white">
-                            <?php echo $experiences_section_data['title']; ?>
+                                <?php echo $experiences_section_data['title']; ?>
                             </h2>
                         </div>
                         <div class="swiper swiper-exp-txt">
                             <div class="swiper-wrapper">
-                            <?php
+                                <?php
                             if( have_rows('experiences_section') ): while ( have_rows('experiences_section') ) : the_row(); 
                                 if( have_rows('experiences_cards') ): while ( have_rows('experiences_cards') ) : the_row();       ?>
                                 <div class="swiper-slide">
@@ -460,18 +436,18 @@ get_header();
     <div class="comm-section alt-wrap">
         <div class="container">
             <div class="testimonials-wrap">
-                <div class="t-left">
+                <div class="t-left" data-aos="fade-up">
                     <div class="comm-head-wrap">
                         <div class="small-head">
                             <h2><?php echo $happy_clients_data['small_text']; ?></h2>
                         </div>
                         <h2 class="comm-head-2">
-                        <?php echo $happy_clients_data['title']; ?>
+                            <?php echo $happy_clients_data['title']; ?>
                         </h2>
                     </div>
                     <div class="swiper testi-swiper">
                         <div class="swiper-wrapper">
-                        <?php
+                            <?php
                             if( have_rows('happy_clients') ): while ( have_rows('happy_clients') ) : the_row(); 
                                 if( have_rows('clients') ): while ( have_rows('clients') ) : the_row();       ?>
                             <div class="swiper-slide">
@@ -487,7 +463,7 @@ get_header();
                             <?php  endwhile; endif;
                             endwhile; endif;
                             ?>
-                        
+
                             <!-- <div class="swiper-slide">
                                 <div class="testi-box">
                                     <p class="comm-txt-2">Incredible experience with Jetpooling</p>
@@ -523,7 +499,7 @@ get_header();
                         </div>
                     </div>
                 </div>
-                <div class="t-right">
+                <div class="t-right" data-aos="fade-up">
                     <div class="pagination-testi comm-pagination"></div>
                     <div class="comm-nav black">
                         <div class="testi-nav-prev comm-prev"></div>
