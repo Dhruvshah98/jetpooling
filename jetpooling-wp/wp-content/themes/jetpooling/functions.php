@@ -61,6 +61,11 @@ function blankslate_footer()
         wp_enqueue_script('home',  get_template_directory_uri() . '/assets/js/home.js', array(), 1.1, true);
     }
 
+
+    if (is_singular( 'experiences' )) {
+        wp_enqueue_script('home',  get_template_directory_uri() . '/assets/js/home.js', array(), 1.1, true);
+    }
+
     if (is_page_template('experiences.php')) {
         wp_enqueue_script('experince',  get_template_directory_uri() . '/assets/js/experince.js', array(), 1.1, true);
     }

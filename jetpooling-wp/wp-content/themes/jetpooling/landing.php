@@ -323,6 +323,111 @@ get_header();
                         </div>
                     </div>
                 </div>
+                <div class="tab_container">
+            <div class="swiper-fleet-1 swiper fleet-pointers" id="tab1">
+              <div class="swiper-wrapper">
+              <?php $i = 1;
+                            if( have_rows('our_fleet') ): while ( have_rows('our_fleet') ) : the_row(); 
+                                if( have_rows('slider_images') ): while ( have_rows('slider_images') ) : the_row();       ?>
+                            <div class="swiper-slide">
+                                <div class="fleet-img">
+                                    <img src="<?php  echo get_sub_field('banner_image'); ?>" alt="">
+                                    <div class="service-txt comm-small-title white">
+                                        <div class="fleet-sm-head">
+                                            <h5>0<?php echo $i ?></h5>
+                                            <h5><?php  echo get_sub_field('sub_title'); ?></h5>
+                                        </div>
+                                        <h4 class="comm-txt-2 white"><?php  echo get_sub_field('title'); ?></h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <?php $i++; endwhile; endif;
+                            endwhile; endif;
+                            ?>
+                
+              </div>
+              <div class="fleet-indicators">
+                <div class="pagination-fleet-1 comm-pagination white"></div>
+                <div class="comm-nav fleet-nav">
+                  <div class="fleet-nav-prev-1 comm-prev"></div>
+                  <div class="fleet-nav-next-1 comm-next"></div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-fleet-1 swiper fleet-pointers" id="tab2">
+              <div class="swiper-wrapper">
+
+
+                            <?php $i = 1;
+                            if( have_rows('our_fleet') ): while ( have_rows('our_fleet') ) : the_row(); 
+                                if( have_rows('slider_images_tab_2') ): while ( have_rows('slider_images_tab_2') ) : the_row();       ?>
+                            <div class="swiper-slide">
+                                <div class="fleet-img">
+                                    <img src="<?php  echo get_sub_field('banner_image'); ?>" alt="">
+                                    <div class="service-txt comm-small-title white">
+                                        <div class="fleet-sm-head">
+                                            <h5>0<?php echo $i ?></h5>
+                                            <h5><?php  echo get_sub_field('sub_title'); ?></h5>
+                                        </div>
+                                        <h4 class="comm-txt-2 white"><?php  echo get_sub_field('title'); ?></h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <?php $i++; endwhile; endif;
+                            endwhile; endif;
+                            ?>
+              
+
+
+              </div>
+              <div class="fleet-indicators">
+                <div class="pagination-fleet-1 comm-pagination white"></div>
+                <div class="comm-nav fleet-nav">
+                  <div class="fleet-nav-prev-1 comm-prev"></div>
+                  <div class="fleet-nav-next-1 comm-next"></div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-fleet-1 swiper fleet-pointers" id="tab3">
+              <div class="swiper-wrapper">
+
+
+                
+<?php $i = 1;
+                            if( have_rows('our_fleet') ): while ( have_rows('our_fleet') ) : the_row(); 
+                                if( have_rows('slider_images_tab_3') ): while ( have_rows('slider_images_tab_3') ) : the_row();       ?>
+                            <div class="swiper-slide">
+                                <div class="fleet-img">
+                                    <img src="<?php  echo get_sub_field('banner_image'); ?>" alt="">
+                                    <div class="service-txt comm-small-title white">
+                                        <div class="fleet-sm-head">
+                                            <h5>0<?php echo $i ?></h5>
+                                            <h5><?php  echo get_sub_field('sub_title'); ?></h5>
+                                        </div>
+                                        <h4 class="comm-txt-2 white"><?php  echo get_sub_field('title'); ?></h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <?php $i++; endwhile; endif;
+                            endwhile; endif;
+                            ?>
+
+                
+              </div>
+              <div class="fleet-indicators">
+                <div class="pagination-fleet-1 comm-pagination white"></div>
+                <div class="comm-nav fleet-nav">
+                  <div class="fleet-nav-prev-1 comm-prev"></div>
+                  <div class="fleet-nav-next-1 comm-next"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
             </div>
         </div>
     </div>
@@ -390,35 +495,14 @@ get_header();
                         <div class="swiper swiper-exp-txt">
                             <div class="swiper-wrapper">
                                 <?php
-                            if( have_rows('experiences_section') ): while ( have_rows('experiences_section') ) : the_row(); 
-                                if( have_rows('experiences_cards') ): while ( have_rows('experiences_cards') ) : the_row();       ?>
-                                <div class="swiper-slide">
-                                    <p class="comm-txt white"><?php  echo get_sub_field('content'); ?></p>
-                                    <a class="button white" href="<?php  echo get_sub_field('cta'); ?>">Explore more</a>
-                                </div>
-                                <?php  endwhile; endif;
-                            endwhile; endif;
-                            ?>
-                                <!-- <div class="swiper-slide">
-                                    <p class="comm-txt white">Discover the ecological jewel of Seychelles and private
-                                        island home to Six
-                                        Senses Zil
-                                        Pasyon. Step in tune with nature, swim with turtles and enjoy an intimate
-                                        destination that is an
-                                        ode to
-                                        well being and absolute comfort.</p>
-                                    <a class="button white" href="">Explore more</a>
-                                </div>
-                                <div class="swiper-slide">
-                                    <p class="comm-txt white">Discover the ecological jewel of Seychelles and private
-                                        island home to Six
-                                        Senses Zil
-                                        Pasyon. Step in tune with nature, swim with turtles and enjoy an intimate
-                                        destination that is an
-                                        ode to
-                                        well being and absolute comfort.</p>
-                                    <a class="button white" href="">Explore more</a>
-                                </div> -->
+                                if( have_rows('experiences_section') ): while ( have_rows('experiences_section') ) : the_row(); 
+                                    if( have_rows('experiences_cards') ): while ( have_rows('experiences_cards') ) : the_row();       ?>
+                                    <div class="swiper-slide">
+                                        <p class="comm-txt white"><?php  echo get_sub_field('content'); ?></p>
+                                        <a class="button white" href="<?php  echo get_sub_field('cta'); ?>">Explore more</a>
+                                    </div>
+                                    <?php  endwhile; endif;
+                                endwhile; endif; ?>
                             </div>
                         </div>
                         <div class="pagination-exp comm-pagination white"></div>
