@@ -261,7 +261,7 @@ get_header(); ?>
                 <p class="comm-txt-2">
                     <?php echo $contact_section_data['white_section_content']; ?>
                 </p>
-                <a href="<?php echo $contact_section_data['book_now']; ?>" class="button">Book now</a>
+                <a href="<?php echo $contact_section_data['book_now']; ?>" class="button">Charter Now</a>
             </div>
         </div>
     </div>

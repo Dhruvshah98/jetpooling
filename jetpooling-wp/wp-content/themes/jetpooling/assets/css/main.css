@@ -3355,6 +3355,7 @@ body {
 .comm-section {
   padding: 120px 0;
   position: relative;
+  overflow: hidden;
 }
 .mb16 {
   margin-bottom: 16px !important;
@@ -3412,6 +3413,9 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
+}
+.banner-txt .small-head h2 {
+  letter-spacing: 6px;
 }
 .comm-head {
   font-family: "Futura";
@@ -3704,6 +3708,13 @@ body {
   display: flex;
   justify-content: space-between;
 }
+.fleet-img h5,
+.fleet-img h4 {
+  text-shadow: 2px 2px 2px #000;
+}
+.fleet-indicators .comm-pagination {
+  text-shadow: 2px 2px 2px #000;
+}
 .testimonials-wrap {
   display: flex;
   justify-content: space-between;
@@ -3791,6 +3802,9 @@ body {
 .lines-section {
   overflow: hidden;
 }
+.wpcf7 {
+  width: 100%;
+}
 /* header */
 :root {
   --menuWidth: 300px;
@@ -3801,6 +3815,7 @@ body {
   left: 0;
   width: 100%;
   z-index: 999;
+  transition: 0.3s;
 }
 .head-right {
   display: flex;
@@ -3814,6 +3829,7 @@ body {
   flex: 1;
   display: flex;
   justify-content: center;
+  mix-blend-mode: difference;
 }
 .header-box .container {
   display: -webkit-flex;

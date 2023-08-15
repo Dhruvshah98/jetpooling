@@ -13,7 +13,7 @@
         <div class="header-box">
             <div class="container">
                 <ul class="header-list">
-                    <li><a href="#">Charters</a></li>
+                    <li><a href="<?php echo get_site_url().'/charters/'; ?>">Charters</a></li>
                     <li><a href="<?php echo get_site_url().'/experiences/'; ?>">Experiences</a></li>
                     <li><a href="<?php echo get_site_url().'/about-us/'; ?>">About us</a></li>
                 </ul>
@@ -50,20 +50,11 @@
                 </div>
 
                 <ul>
-
-                    <li><a href="#">Solutions</a></li>
-
-                    <li class="has-dropdown">
-                        <a href="javascript:void(0)">Other Services</a>
-                        <ul>
-                            <li>
-                                <a href="#"><img src="./img/dd-10.svg" alt="" />Website design and development </a>
-                            </li>
-                            <li>
-                                <a href="#"><img src="./img/dd-11.svg" alt="" />SEO services </a>
-                            </li>
-                        </ul>
-                    </li>
+                    <li><a href="<?php echo get_site_url().'/charters/'; ?>">Charters</a></li>
+                    <li><a href="<?php echo get_site_url().'/experiences/'; ?>">Experiences</a></li>
+                    <li><a href="<?php echo get_site_url().'/about-us/'; ?>">About us</a></li>
+                    <li><a href="<?php echo get_site_url().'/contact/'; ?>">Contact</a></li>
+                    <li><a href="<?php echo get_site_url().'/about-us/'; ?>">Book now</a></li>
                 </ul>
             </nav>
         </div>
