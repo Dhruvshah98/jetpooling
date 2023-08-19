@@ -3451,6 +3451,9 @@ body {
   width: 100%;
   object-fit: cover;
 }
+.team-wrap .alternate-img img {
+  object-fit: contain;
+}
 .comm-head-wrap {
   max-width: 420px;
 }

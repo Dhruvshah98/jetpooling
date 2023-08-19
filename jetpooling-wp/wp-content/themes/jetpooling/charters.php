@@ -229,7 +229,7 @@ get_header(); ?>
                                 if( have_rows('pictures_section') ): while ( have_rows('pictures_section') ) : the_row();       ?>
                         <div class="swiper-slide">
                             <div class="fleet-img">
-                                <img src="<?php  echo get_sub_field('banner_image'); ?>" alt="" />
+                                <img src="<?php the_sub_field('banner_image'); ?>" alt="" />
                                 <div class="service-txt comm-small-title white">
                                     <div class="fleet-sm-head">
                                         <h5>01</h5>
