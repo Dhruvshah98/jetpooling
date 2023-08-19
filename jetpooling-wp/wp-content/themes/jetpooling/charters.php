@@ -37,38 +37,42 @@ get_header(); ?>
             <div class="f-row f-2 f-1200-1">
                 <div class="f-col" data-aos="fade-up">
                     <div class="alternate-img fleet-img-d">
+
                         <div class="charter-banner-img-wrap charter-banner-img-wrap-1" id="tab1Img">
-                            <div class="charter-banner-img charter-banner-img-1 active">
-                                <img src="<?php echo $our_fleet_data['banner_image']; ?>" alt="" />
+                            <?php $i = 1;
+                    if( have_rows('our_fleet_images_1') ):
+                        while ( have_rows('our_fleet_images_1') ) : the_row();?>
+                            <div
+                                class="charter-banner-img charter-banner-img-<?php echo $i ?> <?php if($i == 1):?>active<?php endif;?>">
+                                <img src=" <?php the_sub_field('image'); ?>" alt="" />
                             </div>
-                            <div class="charter-banner-img charter-banner-img-2">
-                                <img src="<?php echo $our_fleet_data['banner_image']; ?>" alt="" />
-                            </div>
-                            <div class="charter-banner-img charter-banner-img-3">
-                                <img src="<?php echo $our_fleet_data['banner_image']; ?>" alt="" />
-                            </div>
-                            <div class="charter-banner-img charter-banner-img-4">
-                                <img src="<?php echo $our_fleet_data['banner_image']; ?>" alt="" />
-                            </div>
+                            <?php $i++;
+                                        endwhile;
+                                    endif; ?>
                         </div>
                         <div class="charter-banner-img-wrap charter-banner-img-wrap-2" id="tab2Img">
-                            <div class="charter-banner-img charter-banner-img-1 active">
-                                <img src="<?php echo $our_fleet_data['banner_image']; ?>" alt="" />
+                            <?php $i = 1;
+                    if( have_rows('our_fleet_images_2') ):
+                        while ( have_rows('our_fleet_images_2') ) : the_row();?>
+                            <div
+                                class="charter-banner-img charter-banner-img-<?php echo $i ?> <?php if($i == 1):?>active<?php endif;?>">
+                                <img src=" <?php the_sub_field('image'); ?>" alt="" />
                             </div>
-                            <div class="charter-banner-img charter-banner-img-2">
-                                <img src="<?php echo $our_fleet_data['banner_image']; ?>" alt="" />
-                            </div>
-                            <div class="charter-banner-img charter-banner-img-3">
-                                <img src="<?php echo $our_fleet_data['banner_image']; ?>" alt="" />
-                            </div>
-                            <div class="charter-banner-img charter-banner-img-4">
-                                <img src="<?php echo $our_fleet_data['banner_image']; ?>" alt="" />
-                            </div>
+                            <?php $i++;
+                                        endwhile;
+                                    endif; ?>
                         </div>
                         <div class="charter-banner-img-wrap charter-banner-img-wrap-3" id="tab3Img">
-                            <div class="charter-banner-img charter-banner-img-1 active">
-                                <img src="<?php echo $our_fleet_data['banner_image']; ?>" alt="" />
+                            <?php $i = 1;
+                    if( have_rows('our_fleet_images_3') ):
+                        while ( have_rows('our_fleet_images_3') ) : the_row();?>
+                            <div
+                                class="charter-banner-img charter-banner-img-<?php echo $i ?> <?php if($i == 1):?>active<?php endif;?>">
+                                <img src=" <?php the_sub_field('image'); ?>" alt="" />
                             </div>
+                            <?php $i++;
+                                        endwhile;
+                                    endif; ?>
                         </div>
                     </div>
                 </div>
@@ -88,43 +92,40 @@ get_header(); ?>
                             </ul>
                         </div>
                         <div class="tab_container">
-                            <!-- <div class="fleet-pointers" id="tab1">
-                                <?php echo $our_fleet_data['tab__contetnt_1']; ?>
-                            </div>
-                            <div class="fleet-pointers" id="tab2">
-                                <?php echo $our_fleet_data['tab__contetnt_2']; ?>
-                            </div>
-                            <div class="fleet-pointers" id="tab3">
-                                <?php echo $our_fleet_data['tab__contetnt_3']; ?>
-                            </div> -->
-
-
                             <div class="fleet-pointers" id="tab1">
                                 <ul>
-                                    <li class="active" data-id="1">Beachcraft Premier 1</li>
-                                    <li data-id="2">Embraer Legacy 650</li>
-                                    <li data-id="3">Hawker 850 XP</li>
-                                    <li data-id="4">Bombardier Global Express</li>
-                                    <li data-id="5">Dassault Falcon 1</li>
-                                    <li data-id="6">Cessna Citation XIS</li>
-                                    <li data-id="7">Gulfstream G150</li>
-                                    <li data-id="8">Citation Cj 2+</li>
-                                    <li data-id="9">Beachcraft B200</li>
-                                    <li data-id="10">Airbus A319</li>
+                                    <?php $i = 1;
+                                    if( have_rows('our_fleet_images_1') ):
+                                        while ( have_rows('our_fleet_images_1') ) : the_row();?>
+                                    <li class="<?php if($i == 1):?>active<?php endif;?>" data-id="<?php echo $i ?>">
+                                        <?php the_sub_field('title'); ?></li>
+                                    <?php $i++;
+                                        endwhile;
+                                    endif; ?>
                                 </ul>
                             </div>
                             <div class="fleet-pointers" id="tab2">
                                 <ul>
-                                    <li class="active" data-id="1">Embraer Legacy 650</li>
-                                    <li data-id="2">Hawker 850 XP</li>
-                                    <li data-id="3">Dassault Falcon 2</li>
-                                    <li data-id="4">Bombardier Global Express</li>
-                                    <li data-id="5">Beachcraft Premier 1</li>
+                                    <?php $i = 1;
+                                    if( have_rows('our_fleet_images_2') ):
+                                        while ( have_rows('our_fleet_images_2') ) : the_row();?>
+                                    <li class="<?php if($i == 1):?>active<?php endif;?>" data-id="<?php echo $i ?>">
+                                        <?php the_sub_field('title'); ?></li>
+                                    <?php $i++;
+                                        endwhile;
+                                    endif; ?>
                                 </ul>
                             </div>
                             <div class="fleet-pointers" id="tab3">
                                 <ul>
-                                    <li class="active" data-id="1">Bombardier Global Express</li>
+                                    <?php $i = 1;
+                                    if( have_rows('our_fleet_images_3') ):
+                                        while ( have_rows('our_fleet_images_3') ) : the_row();?>
+                                    <li class="<?php if($i == 1):?>active<?php endif;?>" data-id="<?php echo $i ?>">
+                                        <?php the_sub_field('title'); ?></li>
+                                    <?php $i++;
+                                        endwhile;
+                                    endif; ?>
                                 </ul>
                             </div>
                         </div>

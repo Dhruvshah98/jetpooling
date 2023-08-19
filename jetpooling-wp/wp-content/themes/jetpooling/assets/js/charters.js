@@ -113,7 +113,6 @@ else {
 //   $(this).addClass("active")
 // })
 
-
 var cBannerList = document.querySelectorAll(".fleet-pointers ul li");
 
 cBannerList.forEach((section, i) => {
@@ -126,9 +125,9 @@ cBannerList.forEach((section, i) => {
   }
 });
 
+
 $(".tabs .button").click(function () {
-  $(".charter-banner-img").hide();
-  $(".charter-banner-img-1").show();
   $(".charter-banner-img-1").addClass('active');
   $(".fleet-pointers ul li[data-id=" + 1 + "]").addClass('active');
 })
+

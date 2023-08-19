@@ -3820,9 +3820,11 @@ body {
 }
 .charter-banner-img-wrap {
   display: none;
+  height: 100%;
 }
 .charter-banner-img {
   display: none;
+  height: 100%;
 }
 .charter-banner-img.active {
   display: block;
