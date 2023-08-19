@@ -37,8 +37,38 @@ get_header(); ?>
             <div class="f-row f-2 f-1200-1">
                 <div class="f-col" data-aos="fade-up">
                     <div class="alternate-img fleet-img-d">
-                        <div class="charter-banner-img charter-banner-img-1">
-                            <img src="<?php echo $our_fleet_data['banner_image']; ?>" alt="" />
+                        <div class="charter-banner-img-wrap charter-banner-img-wrap-1" id="tab1Img">
+                            <div class="charter-banner-img charter-banner-img-1 active">
+                                <img src="<?php echo $our_fleet_data['banner_image']; ?>" alt="" />
+                            </div>
+                            <div class="charter-banner-img charter-banner-img-2">
+                                <img src="<?php echo $our_fleet_data['banner_image']; ?>" alt="" />
+                            </div>
+                            <div class="charter-banner-img charter-banner-img-3">
+                                <img src="<?php echo $our_fleet_data['banner_image']; ?>" alt="" />
+                            </div>
+                            <div class="charter-banner-img charter-banner-img-4">
+                                <img src="<?php echo $our_fleet_data['banner_image']; ?>" alt="" />
+                            </div>
+                        </div>
+                        <div class="charter-banner-img-wrap charter-banner-img-wrap-2" id="tab2Img">
+                            <div class="charter-banner-img charter-banner-img-1 active">
+                                <img src="<?php echo $our_fleet_data['banner_image']; ?>" alt="" />
+                            </div>
+                            <div class="charter-banner-img charter-banner-img-2">
+                                <img src="<?php echo $our_fleet_data['banner_image']; ?>" alt="" />
+                            </div>
+                            <div class="charter-banner-img charter-banner-img-3">
+                                <img src="<?php echo $our_fleet_data['banner_image']; ?>" alt="" />
+                            </div>
+                            <div class="charter-banner-img charter-banner-img-4">
+                                <img src="<?php echo $our_fleet_data['banner_image']; ?>" alt="" />
+                            </div>
+                        </div>
+                        <div class="charter-banner-img-wrap charter-banner-img-wrap-3" id="tab3Img">
+                            <div class="charter-banner-img charter-banner-img-1 active">
+                                <img src="<?php echo $our_fleet_data['banner_image']; ?>" alt="" />
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -71,44 +101,30 @@ get_header(); ?>
 
                             <div class="fleet-pointers" id="tab1">
                                 <ul>
-                                    <li>Beachcraft Premier 1</li>
-                                    <li>Embraer Legacy 650</li>
-                                    <li>Hawker 850 XP</li>
-                                    <li>Bombardier Global Express</li>
-                                    <li>Dassault Falcon 1</li>
-                                    <li>Cessna Citation XIS</li>
-                                    <li>Gulfstream G150</li>
-                                    <li>Citation Cj 2+</li>
-                                    <li>Beachcraft B200</li>
-                                    <li>Airbus A319</li>
+                                    <li class="active" data-id="1">Beachcraft Premier 1</li>
+                                    <li data-id="2">Embraer Legacy 650</li>
+                                    <li data-id="3">Hawker 850 XP</li>
+                                    <li data-id="4">Bombardier Global Express</li>
+                                    <li data-id="5">Dassault Falcon 1</li>
+                                    <li data-id="6">Cessna Citation XIS</li>
+                                    <li data-id="7">Gulfstream G150</li>
+                                    <li data-id="8">Citation Cj 2+</li>
+                                    <li data-id="9">Beachcraft B200</li>
+                                    <li data-id="10">Airbus A319</li>
                                 </ul>
                             </div>
                             <div class="fleet-pointers" id="tab2">
                                 <ul>
-                                    <li>Embraer Legacy 650</li>
-                                    <li>Hawker 850 XP</li>
-                                    <li>Dassault Falcon 2</li>
-                                    <li>Bombardier Global Express</li>
-                                    <li>Beachcraft Premier 1</li>
-                                    <li>Cessna Citation XIS</li>
-                                    <li>Gulfstream G150</li>
-                                    <li>Citation Cj 2+</li>
-                                    <li>Beachcraft B200</li>
-                                    <li>Airbus A319</li>
+                                    <li class="active" data-id="1">Embraer Legacy 650</li>
+                                    <li data-id="2">Hawker 850 XP</li>
+                                    <li data-id="3">Dassault Falcon 2</li>
+                                    <li data-id="4">Bombardier Global Express</li>
+                                    <li data-id="5">Beachcraft Premier 1</li>
                                 </ul>
                             </div>
                             <div class="fleet-pointers" id="tab3">
                                 <ul>
-                                    <li>Bombardier Global Express</li>
-                                    <li>Beachcraft Premier 1</li>
-                                    <li>Dassault Falcon 3</li>
-                                    <li>Cessna Citation XIS</li>
-                                    <li>Hawker 850 XP</li>
-                                    <li>Gulfstream G150</li>
-                                    <li>Citation Cj 2+</li>
-                                    <li>Embraer Legacy 650</li>
-                                    <li>Beachcraft B200</li>
-                                    <li>Airbus A319</li>
+                                    <li class="active" data-id="1">Bombardier Global Express</li>
                                 </ul>
                             </div>
                         </div>

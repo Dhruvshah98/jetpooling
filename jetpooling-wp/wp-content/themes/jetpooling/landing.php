@@ -152,6 +152,8 @@ get_header();
         </div>
     </div>
     <?php endif; ?>
+
+
     <!-- SERVICES -->
     <?php  $services_section_data = get_field('services_section');
     if( $services_section_data ): ?>
@@ -190,11 +192,11 @@ get_header();
                     <div class="services-swiper swiper">
                         <div class="swiper-wrapper">
                             <?php $i = 1;
-                            if( have_rows('our_promise_section') ): while ( have_rows('our_promise_section') ) : the_row(); 
-                                if( have_rows('our_promise_cards') ): while ( have_rows('our_promise_cards') ) : the_row();       ?>
+                            if( have_rows('services_section') ): while ( have_rows('services_section') ) : the_row(); 
+                                if( have_rows('service_cards') ): while ( have_rows('service_cards') ) : the_row();       ?>
                             <div class="swiper-slide">
                                 <div class="alternate-img">
-                                    <img src="<?php bloginfo('template_url'); ?>/assets/img/service-img.jpg" alt="">
+                                    <img src="<?php  echo get_sub_field('banner_image'); ?>" alt="">
                                     <div class="service-txt comm-small-title white">
                                         <h5>0<?php echo $i ?></h5>
                                         <h4 class="comm-txt-2 white"><?php  echo get_sub_field('title'); ?></h4>
@@ -320,7 +322,7 @@ get_header();
                                 if( have_rows('slider_images_tab_3') ): while ( have_rows('slider_images_tab_3') ) : the_row();       ?>
                             <div class="swiper-slide">
                                 <div class="fleet-img">
-                                    <img src="<?php  echo get_sub_field('banner_image'); ?>" alt="">
+                                    <img src="<?php echo get_sub_field('banner_image'); ?>" alt="">
                                     <div class="service-txt comm-small-title white">
                                         <div class="fleet-sm-head">
                                             <h5>0<?php echo $i ?></h5>

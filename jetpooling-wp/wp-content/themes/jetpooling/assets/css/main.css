@@ -3818,6 +3818,15 @@ body {
 .fleet-pointers ul li.active {
   opacity: 1;
 }
+.charter-banner-img-wrap {
+  display: none;
+}
+.charter-banner-img {
+  display: none;
+}
+.charter-banner-img.active {
+  display: block;
+}
 /* header */
 :root {
   --menuWidth: 300px;

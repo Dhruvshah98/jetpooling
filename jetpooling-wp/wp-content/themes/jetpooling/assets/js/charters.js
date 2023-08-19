@@ -67,42 +67,11 @@ var counterSwiper = new Swiper(".counterSwiper", {
 counterInfoSwiper.controller.control = counterSwiper;
 counterSwiper.controller.control = counterInfoSwiper;
 
-/*Counter Script*/
-// var a = 0;
-// $(window).scroll(function () {
-//   var oTop = $(".counter-sec").offset().top - window.innerHeight;
-//   if (a == 0 && $(window).scrollTop() > oTop) {
-//     $(".counter-num").each(function () {
-//       var $this = $(this),
-//         countTo = $this.attr("data-count");
-//       $({
-//         countNum: $this.text(),
-//       }).animate(
-//         {
-//           countNum: countTo,
-//         },
-//         {
-//           duration: 1200,
-//           easing: "swing",
-//           step: function () {
-//             $this.text(Math.floor(this.countNum));
-//           },
-//           complete: function () {
-//             $this.text(this.countNum);
-//           },
-//         }
-//       );
-//     });
-//     a = 1;
-//   }
-// });
-/*Counter Script ends*/
 
 // tabbed content
 if (screen.width < 770) {
   $(".fleet-pointers").hide();
   $(".fleet-pointers:first").show();
-
   /* if in tab mode */
   $(".tabs li").click(function () {
     $(".fleet-pointers").hide();
@@ -112,14 +81,18 @@ if (screen.width < 770) {
     $(".tabs li").addClass("line");
     $(this).removeClass("line");
   });
-} else {
+}
+else {
   $(".fleet-pointers").hide();
   $(".fleet-pointers:first").show();
-
+  $(".charter-banner-img-wrap").hide();
+  $(".charter-banner-img-wrap-1").show();
   /* if in tab mode */
   $(".tabs li").click(function () {
     $(".fleet-pointers").hide();
     var activeTab = $(this).attr("rel");
+    $(".charter-banner-img-wrap").hide();
+    $("#" + activeTab + "Img").fadeIn();
     $("#" + activeTab).fadeIn();
 
     $(".tabs li").addClass("line");
@@ -132,8 +105,30 @@ if (screen.width < 770) {
 
 
 
+// var mapLength = $(".map-wrap").length;
+// $(".map-point").on("click", function () {
+//   console.log($(".map-point").attr("data-id"));
+//   var a = $(this).attr("data-id"); $(".map-point").removeClass("active");
+//   $(".map-wrap").removeClass("active"), $(".map-wrap-" + a).addClass("active");
+//   $(this).addClass("active")
+// })
+
+
 var cBannerList = document.querySelectorAll(".fleet-pointers ul li");
 
-cBannerList.forEach(element => {
-
+cBannerList.forEach((section, i) => {
+  section.onclick = () => {
+    $(".fleet-pointers ul li").removeClass('active');
+    section.classList.add("active");
+    var a = $(section).attr("data-id")
+    $(".charter-banner-img").removeClass('active');
+    $(".charter-banner-img-" + a).addClass('active');
+  }
 });
+
+$(".tabs .button").click(function () {
+  $(".charter-banner-img").hide();
+  $(".charter-banner-img-1").show();
+  $(".charter-banner-img-1").addClass('active');
+  $(".fleet-pointers ul li[data-id=" + 1 + "]").addClass('active');
+})
