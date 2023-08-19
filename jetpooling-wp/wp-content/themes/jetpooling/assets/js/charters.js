@@ -128,3 +128,12 @@ if (screen.width < 770) {
 }
 
 // tabbed content Ebs
+
+
+
+
+var cBannerList = document.querySelectorAll(".fleet-pointers ul li");
+
+cBannerList.forEach(element => {
+
+});

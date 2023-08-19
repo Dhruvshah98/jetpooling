@@ -150,3 +150,19 @@ if (screen.width < 770) {
     $(this).removeClass("line");
   });
 }
+
+
+
+
+
+
+
+
+// var mapLength = $(".map-wrap").length;
+// $(".map-point").on("click", function () {
+//   console.log($(".map-point").attr("data-id"));
+//   var a = $(this).attr("data-id"); $(".map-point").removeClass("active");
+//   $(".map-wrap").removeClass("active"), $(".map-wrap-" + a).addClass("active");
+//   $(this).addClass("active")
+// })
+

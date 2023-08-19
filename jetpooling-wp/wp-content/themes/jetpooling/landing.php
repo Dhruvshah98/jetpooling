@@ -181,26 +181,6 @@ get_header();
                                 <?php  endwhile; endif;
                             endwhile; endif;
                             ?>
-                                <!-- <div class="swiper-slide">
-                                    <p class="comm-txt">Discover the ecological jewel of Seychelles and private island
-                                        home to Six
-                                        Senses Zil
-                                        Pasyon. Step in tune with nature, swim with turtles and enjoy an intimate
-                                        destination that is an
-                                        ode to
-                                        well being and absolute comfort.</p>
-                                    <a class="button" href="">Explore more</a>
-                                </div>
-                                <div class="swiper-slide">
-                                    <p class="comm-txt">Discover the ecological jewel of Seychelles and private island
-                                        home to Six
-                                        Senses Zil
-                                        Pasyon. Step in tune with nature, swim with turtles and enjoy an intimate
-                                        destination that is an
-                                        ode to
-                                        well being and absolute comfort.</p>
-                                    <a class="button" href="">Explore more</a>
-                                </div> -->
                             </div>
                         </div>
                         <div class="pagination-services comm-pagination"></div>
@@ -224,24 +204,6 @@ get_header();
                             <?php $i++; endwhile; endif;
                             endwhile; endif;
                             ?>
-                            <!-- <div class="swiper-slide">
-                                <div class="alternate-img">
-                                    <img src="<?php bloginfo('template_url'); ?>/assets/img/about-img.jpg" alt="">
-                                    <div class="service-txt comm-small-title white">
-                                        <h5>02</h5>
-                                        <h4 class="comm-txt-2 white">Private Jet Charter</h4>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="alternate-img">
-                                    <img src="<?php bloginfo('template_url'); ?>/assets/img/service-img.jpg" alt="">
-                                    <div class="service-txt comm-small-title white">
-                                        <h5>03</h5>
-                                        <h4 class="comm-txt-2 white">Private Jet Charter</h4>
-                                    </div>
-                                </div>
-                            </div> -->
                         </div>
                         <div class="comm-nav">
                             <div class="s-nav-prev comm-prev"></div>

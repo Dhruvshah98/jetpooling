@@ -3805,6 +3805,19 @@ body {
 .wpcf7 {
   width: 100%;
 }
+.tab_container {
+  width: 100%;
+  min-height: 200px;
+}
+.tab_container .fleet-pointers {
+  width: 100%;
+}
+.fleet-pointers ul li {
+  cursor: pointer;
+}
+.fleet-pointers ul li.active {
+  opacity: 1;
+}
 /* header */
 :root {
   --menuWidth: 300px;
