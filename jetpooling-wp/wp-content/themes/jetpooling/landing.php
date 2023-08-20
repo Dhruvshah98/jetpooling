@@ -33,7 +33,11 @@ get_header();
                 if( $banner_section_data ): ?>
     <div class="banner-wrap">
         <div class="banner-bg" data-aos="zoom-out">
-            <img src="<?php echo $banner_section_data['banner_image']; ?>" alt="">
+            <!-- <img src="<?php echo $banner_section_data['banner_image']; ?>" alt=""> -->
+
+            <video loop autoplay playsinline muted>
+                <source src="<?php echo $banner_section_data['banner_image']; ?>" type="video/mp4">
+            </video>
 
             <!-- <video autoplay muted playsinline>
         <source src="movie.mp4" type="video/mp4">

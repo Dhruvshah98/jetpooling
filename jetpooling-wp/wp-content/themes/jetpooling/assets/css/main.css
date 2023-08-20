@@ -3280,6 +3280,11 @@ label.error {
 }
 .team-wrap .alternate-txt .comm-txt {
   max-width: 100%;
+  max-height: 300px;
+  overflow-y: scroll;
+}
+.team-wrap .comm-nav {
+  padding-left: 0;
 }
 .contact-box {
   padding: 76px;
