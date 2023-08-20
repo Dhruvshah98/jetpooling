@@ -3828,9 +3828,13 @@ body {
 .charter-banner-img {
   display: none;
   height: 100%;
+  transition: 0.5s;
 }
 .charter-banner-img.active {
   display: block;
+}
+.black-txt {
+  background: #fff;
 }
 /* header */
 :root {
@@ -4754,6 +4758,9 @@ body {
     padding: 0 16px;
     font-size: 18px;
   }
+  .fleet-pointers {
+    margin-top: 30px;
+  }
 }
 @media all and (max-width: 480px) {
   .comm-head-2 {
@@ -4787,6 +4794,18 @@ body {
   .fleet-indicators,
   .comm-nav {
     padding: 20px;
+  }
+  :root {
+    --header-height: 50px;
+  }
+  .fleet-img-d {
+    margin-bottom: 0;
+  }
+  .count-wrap p {
+    font-size: 18px;
+  }
+  .counter-info {
+    margin-bottom: 6px;
   }
 }
 @media all and (max-width: 400px) {
@@ -4823,6 +4842,18 @@ body {
     height: 48px;
     padding: 0 12px;
     font-size: 16px;
+  }
+  .count-wrap p {
+    font-size: 16px;
+  }
+  .count-wrap {
+    min-height: 260px;
+  }
+  .counter-info-box .comm-small-title {
+    margin-bottom: 40px;
+  }
+  .comm-small-title h5 {
+    margin-bottom: 16px;
   }
 }
 /*# sourceMappingURL=main.css.map */

@@ -72,12 +72,17 @@ counterSwiper.controller.control = counterInfoSwiper;
 if (screen.width < 770) {
   $(".fleet-pointers").hide();
   $(".fleet-pointers:first").show();
+  $(".charter-banner-img-wrap").hide();
+  $(".charter-banner-img-wrap-1").show();
   /* if in tab mode */
   $(".tabs li").click(function () {
     $(".fleet-pointers").hide();
     var activeTab = $(this).attr("rel");
     $("#" + activeTab).fadeIn();
 
+    $(".charter-banner-img-wrap").hide();
+    $("#" + activeTab + "Img").fadeIn();
+    $("#" + activeTab).fadeIn();
     $(".tabs li").addClass("line");
     $(this).removeClass("line");
   });
@@ -127,6 +132,8 @@ cBannerList.forEach((section, i) => {
 
 
 $(".tabs .button").click(function () {
+  $(".fleet-pointers ul li").removeClass('active');
+  $(".charter-banner-img").removeClass('active');
   $(".charter-banner-img-1").addClass('active');
   $(".fleet-pointers ul li[data-id=" + 1 + "]").addClass('active');
 })

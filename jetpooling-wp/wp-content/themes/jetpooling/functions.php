@@ -55,6 +55,7 @@ function blankslate_footer()
 
 
 
+    wp_enqueue_script('megamenu-js',  get_template_directory_uri() . '/assets/js/megamenu.js', array(), 1.1, true);
     wp_enqueue_script('common-js',  get_template_directory_uri() . '/assets/js/common.js', array(), 1.1, true);
 
     if (is_page_template('landing.php')) {

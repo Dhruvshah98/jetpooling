@@ -41,40 +41,45 @@ get_header();
                             <h2 class="comm-head-2"><?php echo get_field('title')?></h2>
                         </div>
                         <p class="comm-txt">
-                        <?php echo get_field('content')?>
+                            <?php echo get_field('content')?>
                         </p>
                         <div class="touch-box">
                             <div class="touch-info">
                                 <div class="touch-img">
-                                    <img src="<?php bloginfo('template_url'); ?>/assets/img/touch1.svg" alt="Contact Us" width="100%" height="100%" loading="lazy" />
+                                    <img src="<?php bloginfo('template_url'); ?>/assets/img/touch1.svg" alt="Contact Us"
+                                        width="100%" height="100%" loading="lazy" />
                                 </div>
-                                <a href="tel:<?php echo get_field('contact_number')?>"><?php echo get_field('contact_number')?></a>
+                                <a
+                                    href="tel:<?php echo get_field('contact_number')?>"><?php echo get_field('contact_number')?></a>
                             </div>
                             <div class="touch-info">
                                 <div class="touch-img">
-                                    <img src="<?php bloginfo('template_url'); ?>/assets/img/touch2.svg" alt="Contact Us" width="100%" height="100%" loading="lazy" />
+                                    <img src="<?php bloginfo('template_url'); ?>/assets/img/touch2.svg" alt="Contact Us"
+                                        width="100%" height="100%" loading="lazy" />
                                 </div>
                                 <a href="mailto:<?php echo get_field('email')?>"><?php echo get_field('email')?></a>
                             </div>
                             <div class="touch-info">
                                 <div class="touch-img">
-                                    <img src="<?php bloginfo('template_url'); ?>/assets/img/touch3.svg" alt="Contact Us" width="100%" height="100%" loading="lazy" />
+                                    <img src="<?php bloginfo('template_url'); ?>/assets/img/touch3.svg" alt="Contact Us"
+                                        width="100%" height="100%" loading="lazy" />
                                 </div>
                                 <p>
-                                <?php echo get_field('address')?>
+                                    <?php echo get_field('address')?>
                                 </p>
                             </div>
                         </div>
                         <div class="social-wrap">
-                        <?php if( have_rows('social_media') ): ?>
-                                        <?php while( have_rows('social_media') ): the_row(); ?>
-                            <a href="<?php the_sub_field('icon'); ?>" class="social-box">
+                            <?php if( have_rows('social_media') ): ?>
+                            <?php while( have_rows('social_media') ): the_row(); ?>
+                            <a href="<?php the_sub_field('link'); ?>" class="social-box">
                                 <div class="social-img">
-                                    <img src="<?php the_sub_field('icon'); ?>" alt="Find Us" width="100%" height="100%" loading="lazy" />
+                                    <img src="<?php the_sub_field('icon'); ?>" alt="Find Us" width="100%" height="100%"
+                                        loading="lazy" />
                                 </div>
                             </a>
                             <?php endwhile; ?>
-                                    <?php endif; ?>
+                            <?php endif; ?>
                             <!-- <a href="" class="social-box">
                                 <div class="social-img">
                                     <img src="<?php bloginfo('template_url'); ?>/assets/img/social2.svg" alt="Find Us" width="100%" height="100%" loading="lazy" />
@@ -126,7 +131,7 @@ get_header();
                                 <img src="<?php bloginfo('template_url'); ?>/assets/img/arrow_back.svg" alt="" />
                             </button> -->
                             <?php echo  do_shortcode('[contact-form-7 id="155" title="Contact"]')?>
-</div>
+                        </div>
                     </div>
                 </div>
             </div>

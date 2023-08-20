@@ -250,7 +250,7 @@ get_header();
                     <ul>
                         <li class="button" rel="tab1">Private Jets</li>
                         <li class="button line" rel="tab2">Helicopters</li>
-                        <li class="button line" rel="tab3">Yatch</li>
+                        <li class="button line" rel="tab3">Yacht</li>
                     </ul>
                 </div>
             </div>

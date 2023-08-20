@@ -638,8 +638,17 @@ body {
 .charter-banner-img {
   display: none;
   height: 100%;
+  // clip-path: inset(0 100% 0 100%);
+  // opacity: 0;
+  transition: 0.5s;
 
   &.active {
+    // clip-path: inset(0 0 0 0);
+    // opacity: 1;
     display: block;
   }
+}
+
+.black-txt {
+  background: #fff;
 }

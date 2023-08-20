@@ -48,8 +48,8 @@ var swiperfleet2 = new Swiper(".swiper-fleet-2", {
   slidesPerView: 1,
   grabCursor: true,
   navigation: {
-    nextEl: ".fleet-nav-next-3",
-    prevEl: ".fleet-nav-prev-3",
+    nextEl: ".fleet-nav-next-2",
+    prevEl: ".fleet-nav-prev-2",
   },
   pagination: {
     el: ".pagination-fleet-2",
