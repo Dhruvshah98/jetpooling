@@ -9,12 +9,13 @@
 
 <body <?php body_class(); ?>>
     <?php wp_body_open(); ?>
-    <header id="header" class="<?php if (!is_page_template('landing.php')) : ?> black-txt <?php endif; ?>">
+    <header id="header"
+        class="<?php if (!is_page_template(array('landing.php','about.php'))) : ?> black-txt <?php endif; ?>">
         <div class="header-box">
             <div class="container">
                 <ul class="header-list">
-                    <li><a href="#">Charters</a></li>
-                    <li><a href="<?php echo get_site_url().'/experiences/'; ?>">Experiences</a></li>
+                    <li><a href="<?php echo get_site_url().'/charters/'; ?>">Charters & Acquisitions</a></li>
+                    <!-- <li><a href="<?php echo get_site_url().'/experiences/'; ?>">Experiences</a></li> -->
                     <li><a href="<?php echo get_site_url().'/about-us/'; ?>">About us</a></li>
                 </ul>
                 <div class="logoBox">
@@ -25,7 +26,7 @@
                 <div class="menuBtn">
                     <ul class="header-list">
                         <li><a href="<?php echo get_site_url().'/contact/'; ?>">Contact</a></li>
-                        <li><a href="<?php echo get_site_url().'/about-us/'; ?>">Book now</a></li>
+                        <li><a href="<?php echo get_site_url().'/contact/'; ?>">Book now</a></li>
                     </ul>
                     <div class="menu side-menu">
                         <a href="javascript:void(0)" class="js-nav-toggle">
@@ -50,20 +51,11 @@
                 </div>
 
                 <ul>
-
-                    <li><a href="#">Solutions</a></li>
-
-                    <li class="has-dropdown">
-                        <a href="javascript:void(0)">Other Services</a>
-                        <ul>
-                            <li>
-                                <a href="#"><img src="./img/dd-10.svg" alt="" />Website design and development </a>
-                            </li>
-                            <li>
-                                <a href="#"><img src="./img/dd-11.svg" alt="" />SEO services </a>
-                            </li>
-                        </ul>
-                    </li>
+                    <li><a href="<?php echo get_site_url().'/charters/'; ?>">Charters</a></li>
+                    <!-- <li><a href="<?php echo get_site_url().'/experiences/'; ?>">Experiences</a></li> -->
+                    <li><a href="<?php echo get_site_url().'/about-us/'; ?>">About us</a></li>
+                    <li><a href="<?php echo get_site_url().'/contact/'; ?>">Contact</a></li>
+                    <li><a href="<?php echo get_site_url().'/contact/'; ?>">Book now</a></li>
                 </ul>
             </nav>
         </div>

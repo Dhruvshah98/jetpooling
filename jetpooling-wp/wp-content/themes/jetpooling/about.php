@@ -30,7 +30,7 @@ get_header(); ?>
     <!-- About Heade Starts -->
     <secton class="comm-section abt-head-img black-bg">
         <div class="container">
-            <div class="about-img">
+            <div class="about-img" data-aos="zoom-out">
                 <img src="<?php bloginfo('template_url'); ?>/assets/img/abt-img.png" alt="Get to know us better"
                     width="100%" height="100%" loading="lazy" />
             </div>
@@ -59,7 +59,7 @@ get_header(); ?>
                     <p class="comm-txt">
                         <?php echo $about_section_data['content']; ?>
                     </p>
-                    <a class="button" href="<?php echo $about_section_data['cta']; ?>">Explore more</a>
+                    <!-- <a class="button" href="<?php echo $about_section_data['cta']; ?>">Explore more</a> -->
                 </div>
             </div>
         </div>

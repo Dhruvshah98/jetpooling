@@ -42,6 +42,40 @@ var swiperfleet1 = new Swiper(".swiper-fleet-1", {
     },
   },
 });
+var swiperfleet2 = new Swiper(".swiper-fleet-2", {
+  speed: 800,
+  spaceBetween: 30,
+  slidesPerView: 1,
+  grabCursor: true,
+  navigation: {
+    nextEl: ".fleet-nav-next-2",
+    prevEl: ".fleet-nav-prev-2",
+  },
+  pagination: {
+    el: ".pagination-fleet-2",
+    type: "custom",
+    renderCustom: function (swiper, current, total) {
+      return "0" + current + "<span></span>" + "0" + total;
+    },
+  },
+});
+var swiperfleet3 = new Swiper(".swiper-fleet-3", {
+  speed: 800,
+  spaceBetween: 30,
+  slidesPerView: 1,
+  grabCursor: true,
+  navigation: {
+    nextEl: ".fleet-nav-next-3",
+    prevEl: ".fleet-nav-prev-3",
+  },
+  pagination: {
+    el: ".pagination-fleet-3",
+    type: "custom",
+    renderCustom: function (swiper, current, total) {
+      return "0" + current + "<span></span>" + "0" + total;
+    },
+  },
+});
 
 var swiperexp = new Swiper(".exp-swiper", {
   speed: 800,
@@ -116,3 +150,10 @@ if (screen.width < 770) {
     $(this).removeClass("line");
   });
 }
+
+
+
+
+
+
+

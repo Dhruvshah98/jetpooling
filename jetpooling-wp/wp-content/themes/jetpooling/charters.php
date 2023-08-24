@@ -37,7 +37,43 @@ get_header(); ?>
             <div class="f-row f-2 f-1200-1">
                 <div class="f-col" data-aos="fade-up">
                     <div class="alternate-img fleet-img-d">
-                        <img src="<?php echo $our_fleet_data['banner_image']; ?>" alt="" />
+
+                        <div class="charter-banner-img-wrap charter-banner-img-wrap-1" id="tab1Img">
+                            <?php $i = 1;
+                    if( have_rows('our_fleet_images_1') ):
+                        while ( have_rows('our_fleet_images_1') ) : the_row();?>
+                            <div
+                                class="charter-banner-img charter-banner-img-<?php echo $i ?> <?php if($i == 1):?>active<?php endif;?>">
+                                <img src=" <?php the_sub_field('image'); ?>" alt="" />
+                            </div>
+                            <?php $i++;
+                                        endwhile;
+                                    endif; ?>
+                        </div>
+                        <div class="charter-banner-img-wrap charter-banner-img-wrap-2" id="tab2Img">
+                            <?php $i = 1;
+                    if( have_rows('our_fleet_images_2') ):
+                        while ( have_rows('our_fleet_images_2') ) : the_row();?>
+                            <div
+                                class="charter-banner-img charter-banner-img-<?php echo $i ?> <?php if($i == 1):?>active<?php endif;?>">
+                                <img src=" <?php the_sub_field('image'); ?>" alt="" />
+                            </div>
+                            <?php $i++;
+                                        endwhile;
+                                    endif; ?>
+                        </div>
+                        <div class="charter-banner-img-wrap charter-banner-img-wrap-3" id="tab3Img">
+                            <?php $i = 1;
+                    if( have_rows('our_fleet_images_3') ):
+                        while ( have_rows('our_fleet_images_3') ) : the_row();?>
+                            <div
+                                class="charter-banner-img charter-banner-img-<?php echo $i ?> <?php if($i == 1):?>active<?php endif;?>">
+                                <img src=" <?php the_sub_field('image'); ?>" alt="" />
+                            </div>
+                            <?php $i++;
+                                        endwhile;
+                                    endif; ?>
+                        </div>
                     </div>
                 </div>
                 <div class="f-col" data-aos="fade-up">
@@ -57,13 +93,40 @@ get_header(); ?>
                         </div>
                         <div class="tab_container">
                             <div class="fleet-pointers" id="tab1">
-                                <?php echo $our_fleet_data['tab__contetnt_1']; ?>
+                                <ul>
+                                    <?php $i = 1;
+                                    if( have_rows('our_fleet_images_1') ):
+                                        while ( have_rows('our_fleet_images_1') ) : the_row();?>
+                                    <li class="<?php if($i == 1):?>active<?php endif;?>" data-id="<?php echo $i ?>">
+                                        <?php the_sub_field('title'); ?></li>
+                                    <?php $i++;
+                                        endwhile;
+                                    endif; ?>
+                                </ul>
                             </div>
                             <div class="fleet-pointers" id="tab2">
-                                <?php echo $our_fleet_data['tab__contetnt_2']; ?>
+                                <ul>
+                                    <?php $i = 1;
+                                    if( have_rows('our_fleet_images_2') ):
+                                        while ( have_rows('our_fleet_images_2') ) : the_row();?>
+                                    <li class="<?php if($i == 1):?>active<?php endif;?>" data-id="<?php echo $i ?>">
+                                        <?php the_sub_field('title'); ?></li>
+                                    <?php $i++;
+                                        endwhile;
+                                    endif; ?>
+                                </ul>
                             </div>
                             <div class="fleet-pointers" id="tab3">
-                                <?php echo $our_fleet_data['tab__contetnt_3']; ?>
+                                <ul>
+                                    <?php $i = 1;
+                                    if( have_rows('our_fleet_images_3') ):
+                                        while ( have_rows('our_fleet_images_3') ) : the_row();?>
+                                    <li class="<?php if($i == 1):?>active<?php endif;?>" data-id="<?php echo $i ?>">
+                                        <?php the_sub_field('title'); ?></li>
+                                    <?php $i++;
+                                        endwhile;
+                                    endif; ?>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -166,7 +229,7 @@ get_header(); ?>
                                 if( have_rows('pictures_section') ): while ( have_rows('pictures_section') ) : the_row();       ?>
                         <div class="swiper-slide">
                             <div class="fleet-img">
-                                <img src="<?php  echo get_sub_field('banner_image'); ?>" alt="" />
+                                <img src="<?php the_sub_field('banner_image'); ?>" alt="" />
                                 <div class="service-txt comm-small-title white">
                                     <div class="fleet-sm-head">
                                         <h5>01</h5>
@@ -261,7 +324,7 @@ get_header(); ?>
                 <p class="comm-txt-2">
                     <?php echo $contact_section_data['white_section_content']; ?>
                 </p>
-                <a href="<?php echo $contact_section_data['book_now']; ?>" class="button">Book now</a>
+                <a href="<?php echo $contact_section_data['book_now']; ?>" class="button">Charter Now</a>
             </div>
         </div>
     </div>
