@@ -106,7 +106,6 @@ if (screen.width < 770) {
   $(".fleet-pointers").hide();
   $(".fleet-pointers:first").show();
 
-  /* if in tab mode */
   $(".tabs li").click(function () {
     $(".fleet-pointers").hide();
     var activeTab = $(this).attr("rel");
