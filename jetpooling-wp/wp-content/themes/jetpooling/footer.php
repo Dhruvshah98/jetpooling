@@ -21,14 +21,14 @@
                             <img src="<?php bloginfo('template_url'); ?>/assets/img/touch1.svg" alt="Contact Us"
                                 width="100%" height="100%" loading="lazy" />
                         </div>
-                        <a href="tel:1800 572 6667">1800 572 6667</a>
+                        <a href="tel:9800000147"> +91 98000 00147 | +91 98187 75834 | +91 96433 93340</a>
                     </div>
                     <div class="touch-info">
                         <div class="touch-img">
                             <img src="<?php bloginfo('template_url'); ?>/assets/img/touch2.svg" alt="Contact Us"
                                 width="100%" height="100%" loading="lazy" />
                         </div>
-                        <a href="mailto:info@jetpooling.com">info@jetpooling.com</a>
+                        <a href="mailto:info@jetpooling.com">info@jet-pooling.com</a>
                     </div>
                     <div class="touch-info">
                         <div class="touch-img">
@@ -36,8 +36,7 @@
                                 width="100%" height="100%" loading="lazy" />
                         </div>
                         <p>
-                            Lane C8/2, 124E Central Avenue, Sainik Farms, South Delhi, New
-                            Delhi, India, 110062
+                            124E, Sainik Farms, Central Avenue, Lane C8/2, New Delhi, India, 110062
                         </p>
                     </div>
                 </div>

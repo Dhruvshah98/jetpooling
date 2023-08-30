@@ -26,7 +26,31 @@
   flex: 1;
   display: flex;
   justify-content: center;
-  mix-blend-mode: difference;
+  // mix-blend-mode: difference;
+}
+
+.logo-inverse {
+  display: none
+}
+
+.fixHeader {
+  .logo {
+    display: none;
+  }
+
+  .logo-inverse {
+    display: block;
+  }
+}
+
+.black-txt {
+  .logo {
+    display: none;
+  }
+
+  .logo-inverse {
+    display: block;
+  }
 }
 
 .header-box {
@@ -124,7 +148,7 @@
 
   // flex: 1;
   li {
-    padding: 7px 40px;
+    padding: 7px 30px;
 
     a {
       font-size: 16px;

@@ -235,7 +235,7 @@ get_header(); ?>
                                         <h5>01</h5>
                                         <h5><?php  echo get_sub_field('title'); ?></h5>
                                     </div>
-                                    <h4 class="comm-txt-2 white"><?php  echo get_sub_field('title'); ?></h4>
+                                    <!-- <h4 class="comm-txt-2 white"><?php  echo get_sub_field('title'); ?></h4> -->
                                 </div>
                             </div>
                         </div>
@@ -291,9 +291,9 @@ get_header(); ?>
     <!-- CONTACT FORM -->
     <?php  $contact_section_data = get_field('contact_section');
      if( $contact_section_data ): ?>
-    <div class="comm-section alt-wrap right-image black-bg">
+    <div class="comm-section alt-wrap right-image black-bg contact-charters">
         <div class="container">
-            <div class="f-row f-2 f-990-1">
+            <div class="f-row f-2 f-1200-1">
                 <div class="f-col" data-aos="fade-up">
                     <div class="alternate-img contact-img">
                         <img src="<?php bloginfo('template_url'); ?>/assets//img/form-img.jpg" alt="" />

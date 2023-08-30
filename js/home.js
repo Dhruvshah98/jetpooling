@@ -98,7 +98,6 @@ if (screen.width < 770) {
     $(".fleet-pointers").hide();
     var activeTab = $(this).attr("rel");
     $("#" + activeTab).fadeIn();
-
     $(".tabs li").addClass("line");
     $(this).removeClass("line");
   });
