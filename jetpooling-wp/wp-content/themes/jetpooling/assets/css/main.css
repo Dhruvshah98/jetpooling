@@ -3323,7 +3323,7 @@ label.error {
   max-width: 494px;
 }
 :root {
-  --header-height: 80px;
+  --header-height: 90px;
   --header-scroll-height: 70px;
 }
 html,
@@ -3824,6 +3824,20 @@ body {
 }
 .black-txt {
   background: #fff;
+}
+.wpcf7 form.sent .wpcf7-response-output {
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+  padding: 12px;
+}
+.nav-up {
+  transform: translateY(-100%);
+  transition: 0.3s;
+}
+.nav-down {
+  transform: translateY(0%);
+  transition: 0.3s;
 }
 /* header */
 :root {

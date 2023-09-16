@@ -22,6 +22,7 @@
     <!-- End Google Tag Manager -->
     <meta charset="<?php bloginfo('charset'); ?>" />
     <meta name="viewport" content="width=device-width" />
+    <meta name="facebook-domain-verification" content="0wcolt3d9n1p2ly2f30u322jkw3afq" />
     <?php wp_head(); ?>
 </head>
 

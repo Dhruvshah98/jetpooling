@@ -10,9 +10,10 @@
                 </div>
                 <div class="footer-box">
                     <h4 class="footer-hdn">Connect</h4>
-                    <a href="https://www.instagram.com/jetpooling/">Instagram</a>
-                    <a href="https://www.facebook.com/jetpooling">Facebook</a>
-                    <!-- <a href="about.html">YouTube</a> -->
+                    <a href="https://www.instagram.com/jetpooling/"><img
+                            src="<?php bloginfo('template_url'); ?>/assets/img/insta.svg" alt=""> Instagram</a>
+                    <a href="https://www.facebook.com/jetpooling"><img
+                            src="<?php bloginfo('template_url'); ?>/assets/img/fb.svg" alt=""> Facebook</a>
                 </div>
                 <div class="footer-box">
                     <h4 class="footer-hdn">Get in touch</h4>
