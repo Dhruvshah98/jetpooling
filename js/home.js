@@ -15,15 +15,15 @@ var swiperServices = new Swiper(".services-swiper", {
     },
   },
 });
-var swiperServicesTxt = new Swiper(".swiper-ser-txt", {
-  speed: 800,
-  spaceBetween: 30,
-  slidesPerView: 1,
-  grabCursor: true,
-});
+// var swiperServicesTxt = new Swiper(".swiper-ser-txt", {
+//   speed: 800,
+//   spaceBetween: 30,
+//   slidesPerView: 1,
+//   grabCursor: true,
+// });
 
-swiperServices.controller.control = swiperServicesTxt;
-swiperServicesTxt.controller.control = swiperServices;
+// swiperServices.controller.control = swiperServicesTxt;
+// swiperServicesTxt.controller.control = swiperServices;
 
 var swiperfleet1 = new Swiper(".swiper-fleet-1", {
   speed: 800,

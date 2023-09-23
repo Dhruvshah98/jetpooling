@@ -174,11 +174,7 @@ get_header();
                                 <?php echo $services_section_data['title']; ?>
                             </h2>
                         </div>
-                        <p class="comm-txt">
-                            <?php echo $services_section_data['sub_title']; ?>
-                        </p>
-                        <a class="button" href="<?php  echo get_sub_field('cta'); ?>">Explore more</a>
-                        <!-- <div class="swiper swiper-ser-txt">
+                        <div class="swiper swiper-ser-txt">
                             <div class="swiper-wrapper">
                                 <?php
                             if( have_rows('services_section') ): while ( have_rows('services_section') ) : the_row(); 
@@ -192,8 +188,8 @@ get_header();
                             endwhile; endif;
                             ?>
                             </div>
-                        </div> -->
-                        <!-- <div class="pagination-services comm-pagination"></div> -->
+                        </div>
+                        <div class="pagination-services comm-pagination"></div>
                     </div>
                 </div>
                 <div class="f-col" data-aos="fade-up">
@@ -518,16 +514,6 @@ get_header();
             </div>
         </div>
     </div>
-
-
-
-    <!-- Instagram -->
-    <div class="comm-section alt-wrap">
-        <div class="container">
-            <?php echo  do_shortcode('[instagram-feed feed=1]')?>
-        </div>
-    </div>
-
 </div>
 <?php endif; ?>
 
