@@ -104,7 +104,7 @@ get_header();
                     <p class="comm-txt white">
                         <?php echo $our_promise_section_data['sub_title']; ?>
                     </p>
-                    <a href="<?php echo $our_promise_section_data['cta']; ?>" class="button white">Learn more</a>
+                    <!-- <a href="<?php echo $our_promise_section_data['cta']; ?>" class="button white">Learn more</a> -->
                 </div>
                 <div class="promise-right">
                     <div class="f-row f-2">
@@ -177,7 +177,7 @@ get_header();
                         <p class="comm-txt">
                             <?php echo $services_section_data['sub_title']; ?>
                         </p>
-                        <a class="button" href="<?php  echo get_sub_field('cta'); ?>">Explore more</a>
+                        <a class="button" href="<?php  echo $services_section_data['cta']; ?>">Explore more</a>
                         <!-- <div class="swiper swiper-ser-txt">
                             <div class="swiper-wrapper">
                                 <?php

@@ -39,7 +39,7 @@
             <div class="container">
                 <ul class="header-list">
                     <li><a href="<?php echo get_site_url().'/'; ?>">Home</a></li>
-                    <li><a href="<?php echo get_site_url().'/charters/'; ?>">Charters & Acquisitions</a></li>
+                    <li><a href="<?php echo get_site_url().'/our-fleet/'; ?>">Our Fleet</a></li>
                     <!-- <li><a href="<?php echo get_site_url().'/experiences/'; ?>">Experiences</a></li> -->
                     <li><a href="<?php echo get_site_url().'/about-us/'; ?>">About us</a></li>
                 </ul>
@@ -80,7 +80,7 @@
 
                 <ul>
                     <li><a href="<?php echo get_site_url().'/'; ?>">Home</a></li>
-                    <li><a href="<?php echo get_site_url().'/charters/'; ?>">Charters & Acquisitions</a></li>
+                    <li><a href="<?php echo get_site_url().'/our-fleet/'; ?>">Our Fleet</a></li>
                     <!-- <li><a href="<?php echo get_site_url().'/experiences/'; ?>">Experiences</a></li> -->
                     <li><a href="<?php echo get_site_url().'/about-us/'; ?>">About us</a></li>
                     <li><a href="<?php echo get_site_url().'/contact/'; ?>">Contact</a></li>

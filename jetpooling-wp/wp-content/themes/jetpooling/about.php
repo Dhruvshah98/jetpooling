@@ -85,7 +85,7 @@ get_header(); ?>
                     <p class="comm-txt white">
                         <?php echo $our_promise_section_data['sub_title']; ?>
                     </p>
-                    <a href="<?php echo $our_promise_section_data['cta']; ?>" class="button white">Learn more</a>
+                    <!-- <a href="<?php echo $our_promise_section_data['cta']; ?>" class="button white">Learn more</a> -->
                 </div>
                 <div class="promise-right" data-aos="fade-up">
 
