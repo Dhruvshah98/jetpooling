@@ -35,13 +35,17 @@ get_header();
         <div class="banner-bg" data-aos="zoom-out">
             <!-- <img src="<?php echo $banner_section_data['banner_image']; ?>" alt=""> -->
 
-            <video loop autoplay playsinline muted>
+            <!-- <video loop autoplay playsinline muted>
                 <source src="<?php echo $banner_section_data['banner_image']; ?>" type="video/mp4">
-            </video>
+            </video> -->
 
-            <!-- <video autoplay muted playsinline>
-        <source src="movie.mp4" type="video/mp4">
-        </video> -->
+            <div class="home-banner">
+                <iframe class="video-embed"
+                    src="h<?php echo $banner_section_data['banner_image']; ?>?autoplay=1&amp;mute=1&amp;controls=1&amp;iv_load_policy=3&amp;modestbranding=1&amp;rel=0&amp;showinfo=0&amp;autoplay=1&amp;mute=1&amp;loop=1"
+                    frameborder="0">
+                </iframe>
+            </div>
+            <!-- https://www.youtube.com/embed/KxhhuX19KgQ -->
         </div>
         <div class="container">
             <div class="banner-txt" data-aos="fade-up">
@@ -88,29 +92,53 @@ get_header();
     <?php endif; ?>
 
     <!-- EXPERIENCEs -->
-    <?php  $experiences_section_data = get_field('experiences_section');
-    if( $experiences_section_data ): ?>
-    <div class="comm-section alt-wrap black-bg right-image">
+    <?php  $why_section_1_data = get_field('why_section_1');
+    if( $why_section_1_data ): ?>
+    <div class="comm-section alt-wrap black-bg right-image np-why">
         <div class="container">
             <div class="f-row f-2 f-990-1">
                 <div class="f-col" data-aos="fade-up">
                     <div class="exp-swiper-1 swiper">
                         <div class="swiper-wrapper">
                             <?php $i =1;
-                            if( have_rows('experiences_section') ): while ( have_rows('experiences_section') ) : the_row(); 
-                                if( have_rows('experiences_cards') ): while ( have_rows('experiences_cards') ) : the_row();       ?>
+                            if( have_rows('why_section_1') ): while ( have_rows('why_section_1') ) : the_row(); 
+                                if( have_rows('why_cards_1') ): while ( have_rows('why_cards_1') ) : the_row();       ?>
                             <div class="swiper-slide">
                                 <div class="alternate-img">
                                     <img src="<?php  echo get_sub_field('banner_image'); ?>" alt="">
-                                    <div class="service-txt comm-small-title white">
-                                        <h5>0<?php echo $i ?></h5>
-                                        <h4 class="comm-txt-2 white"><?php  echo get_sub_field('title'); ?></h4>
-                                    </div>
                                 </div>
                             </div>
                             <?php $i++;  endwhile; endif;
                             endwhile; endif;
                             ?>
+                        </div>
+                        <div class="pagination-exp comm-pagination white"></div>
+                    </div>
+                </div>
+                <div class="f-col" data-aos="fade-up">
+                    <div class="alternate-txt">
+                        <div class="comm-head-wrap">
+                            <div class="small-head white">
+                                <h2><?php echo  $why_section_1_data['small_text']; ?></h2>
+                            </div>
+                            <h2 class="comm-head-2 white">
+                                <?php echo  $why_section_1_data['title']; ?>
+                            </h2>
+                        </div>
+                        <div class="swiper swiper-exp-txt">
+                            <div class="swiper-wrapper">
+                                <?php
+                                if( have_rows('why_section_1') ): while ( have_rows('why_section_1') ) : the_row(); 
+                                    if( have_rows('why_cards_1') ): while ( have_rows('why_cards_1') ) : the_row();       ?>
+                                <div class="swiper-slide">
+                                    <h2 class="comm-head-2 white">
+                                        <?php echo get_sub_field('title'); ?>
+                                    </h2>
+                                    <p class="comm-txt white"><?php  echo get_sub_field('content'); ?></p>
+                                </div>
+                                <?php  endwhile; endif;
+                                endwhile; endif; ?>
+                            </div>
                         </div>
                         <div class="comm-nav">
                             <div class="exp-nav-prev comm-prev"></div>
@@ -118,285 +146,10 @@ get_header();
                         </div>
                     </div>
                 </div>
-                <div class="f-col" data-aos="fade-up">
-                    <div class="alternate-txt">
-                        <div class="comm-head-wrap">
-                            <div class="small-head white">
-                                <h2><?php echo $experiences_section_data['small_text']; ?></h2>
-                            </div>
-                            <h2 class="comm-head-2 white">
-                                <?php echo $experiences_section_data['title']; ?>
-                            </h2>
-                        </div>
-                        <div class="swiper swiper-exp-txt">
-                            <div class="swiper-wrapper">
-                                <?php
-                                if( have_rows('experiences_section') ): while ( have_rows('experiences_section') ) : the_row(); 
-                                    if( have_rows('experiences_cards') ): while ( have_rows('experiences_cards') ) : the_row();       ?>
-                                <div class="swiper-slide">
-                                    <p class="comm-txt white"><?php  echo get_sub_field('content'); ?></p>
-                                    <a class="button white" href="<?php  echo get_sub_field('cta'); ?>">Explore more</a>
-                                </div>
-                                <?php  endwhile; endif;
-                                endwhile; endif; ?>
-                            </div>
-                        </div>
-                        <div class="pagination-exp comm-pagination white"></div>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
     <?php endif; ?>
-
-    <!-- EXPERIENCEs -->
-    <?php  $experiences_section_data = get_field('experiences_section');
-    if( $experiences_section_data ): ?>
-    <div class="comm-section alt-wrap black-bg right-image">
-        <div class="container">
-            <div class="f-row f-2 f-990-1">
-                <div class="f-col" data-aos="fade-up">
-                    <div class="exp-swiper-2 swiper">
-                        <div class="swiper-wrapper">
-                            <?php $i =1;
-                            if( have_rows('experiences_section') ): while ( have_rows('experiences_section') ) : the_row(); 
-                                if( have_rows('experiences_cards') ): while ( have_rows('experiences_cards') ) : the_row();       ?>
-                            <div class="swiper-slide">
-                                <div class="alternate-img">
-                                    <img src="<?php  echo get_sub_field('banner_image'); ?>" alt="">
-                                    <div class="service-txt comm-small-title white">
-                                        <h5>0<?php echo $i ?></h5>
-                                        <h4 class="comm-txt-2 white"><?php  echo get_sub_field('title'); ?></h4>
-                                    </div>
-                                </div>
-                            </div>
-                            <?php $i++;  endwhile; endif;
-                            endwhile; endif;
-                            ?>
-                        </div>
-                        <div class="comm-nav">
-                            <div class="exp-nav-prev comm-prev"></div>
-                            <div class="exp-nav-next comm-next"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="f-col" data-aos="fade-up">
-                    <div class="alternate-txt">
-                        <div class="comm-head-wrap">
-                            <div class="small-head white">
-                                <h2><?php echo $experiences_section_data['small_text']; ?></h2>
-                            </div>
-                            <h2 class="comm-head-2 white">
-                                <?php echo $experiences_section_data['title']; ?>
-                            </h2>
-                        </div>
-                        <div class="swiper swiper-exp-txt">
-                            <div class="swiper-wrapper">
-                                <?php
-                                if( have_rows('experiences_section') ): while ( have_rows('experiences_section') ) : the_row(); 
-                                    if( have_rows('experiences_cards') ): while ( have_rows('experiences_cards') ) : the_row();       ?>
-                                <div class="swiper-slide">
-                                    <p class="comm-txt white"><?php  echo get_sub_field('content'); ?></p>
-                                    <a class="button white" href="<?php  echo get_sub_field('cta'); ?>">Explore more</a>
-                                </div>
-                                <?php  endwhile; endif;
-                                endwhile; endif; ?>
-                            </div>
-                        </div>
-                        <div class="pagination-exp comm-pagination white"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <?php endif; ?>
-
-    <!-- EXPERIENCEs -->
-    <?php  $experiences_section_data = get_field('experiences_section');
-    if( $experiences_section_data ): ?>
-    <div class="comm-section alt-wrap black-bg right-image">
-        <div class="container">
-            <div class="f-row f-2 f-990-1">
-                <div class="f-col" data-aos="fade-up">
-                    <div class="exp-swiper-3 swiper">
-                        <div class="swiper-wrapper">
-                            <?php $i =1;
-                            if( have_rows('experiences_section') ): while ( have_rows('experiences_section') ) : the_row(); 
-                                if( have_rows('experiences_cards') ): while ( have_rows('experiences_cards') ) : the_row();       ?>
-                            <div class="swiper-slide">
-                                <div class="alternate-img">
-                                    <img src="<?php  echo get_sub_field('banner_image'); ?>" alt="">
-                                    <div class="service-txt comm-small-title white">
-                                        <h5>0<?php echo $i ?></h5>
-                                        <h4 class="comm-txt-2 white"><?php  echo get_sub_field('title'); ?></h4>
-                                    </div>
-                                </div>
-                            </div>
-                            <?php $i++;  endwhile; endif;
-                            endwhile; endif;
-                            ?>
-                        </div>
-                        <div class="comm-nav">
-                            <div class="exp-nav-prev comm-prev"></div>
-                            <div class="exp-nav-next comm-next"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="f-col" data-aos="fade-up">
-                    <div class="alternate-txt">
-                        <div class="comm-head-wrap">
-                            <div class="small-head white">
-                                <h2><?php echo $experiences_section_data['small_text']; ?></h2>
-                            </div>
-                            <h2 class="comm-head-2 white">
-                                <?php echo $experiences_section_data['title']; ?>
-                            </h2>
-                        </div>
-                        <div class="swiper swiper-exp-txt">
-                            <div class="swiper-wrapper">
-                                <?php
-                                if( have_rows('experiences_section') ): while ( have_rows('experiences_section') ) : the_row(); 
-                                    if( have_rows('experiences_cards') ): while ( have_rows('experiences_cards') ) : the_row();       ?>
-                                <div class="swiper-slide">
-                                    <p class="comm-txt white"><?php  echo get_sub_field('content'); ?></p>
-                                    <a class="button white" href="<?php  echo get_sub_field('cta'); ?>">Explore more</a>
-                                </div>
-                                <?php  endwhile; endif;
-                                endwhile; endif; ?>
-                            </div>
-                        </div>
-                        <div class="pagination-exp comm-pagination white"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <?php endif; ?>
-
-    <!-- EXPERIENCEs -->
-    <?php  $experiences_section_data = get_field('experiences_section');
-    if( $experiences_section_data ): ?>
-    <div class="comm-section alt-wrap black-bg right-image">
-        <div class="container">
-            <div class="f-row f-2 f-990-1">
-                <div class="f-col" data-aos="fade-up">
-                    <div class="exp-swiper-4 swiper">
-                        <div class="swiper-wrapper">
-                            <?php $i =1;
-                            if( have_rows('experiences_section') ): while ( have_rows('experiences_section') ) : the_row(); 
-                                if( have_rows('experiences_cards') ): while ( have_rows('experiences_cards') ) : the_row();       ?>
-                            <div class="swiper-slide">
-                                <div class="alternate-img">
-                                    <img src="<?php  echo get_sub_field('banner_image'); ?>" alt="">
-                                    <div class="service-txt comm-small-title white">
-                                        <h5>0<?php echo $i ?></h5>
-                                        <h4 class="comm-txt-2 white"><?php  echo get_sub_field('title'); ?></h4>
-                                    </div>
-                                </div>
-                            </div>
-                            <?php $i++;  endwhile; endif;
-                            endwhile; endif;
-                            ?>
-                        </div>
-                        <div class="comm-nav">
-                            <div class="exp-nav-prev comm-prev"></div>
-                            <div class="exp-nav-next comm-next"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="f-col" data-aos="fade-up">
-                    <div class="alternate-txt">
-                        <div class="comm-head-wrap">
-                            <div class="small-head white">
-                                <h2><?php echo $experiences_section_data['small_text']; ?></h2>
-                            </div>
-                            <h2 class="comm-head-2 white">
-                                <?php echo $experiences_section_data['title']; ?>
-                            </h2>
-                        </div>
-                        <div class="swiper swiper-exp-txt">
-                            <div class="swiper-wrapper">
-                                <?php
-                                if( have_rows('experiences_section') ): while ( have_rows('experiences_section') ) : the_row(); 
-                                    if( have_rows('experiences_cards') ): while ( have_rows('experiences_cards') ) : the_row();       ?>
-                                <div class="swiper-slide">
-                                    <p class="comm-txt white"><?php  echo get_sub_field('content'); ?></p>
-                                    <a class="button white" href="<?php  echo get_sub_field('cta'); ?>">Explore more</a>
-                                </div>
-                                <?php  endwhile; endif;
-                                endwhile; endif; ?>
-                            </div>
-                        </div>
-                        <div class="pagination-exp comm-pagination white"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <?php endif; ?>
-
-    <!-- EXPERIENCEs -->
-    <?php  $experiences_section_data = get_field('experiences_section');
-    if( $experiences_section_data ): ?>
-    <div class="comm-section alt-wrap black-bg right-image">
-        <div class="container">
-            <div class="f-row f-2 f-990-1">
-                <div class="f-col" data-aos="fade-up">
-                    <div class="exp-swiper-5 swiper">
-                        <div class="swiper-wrapper">
-                            <?php $i =1;
-                            if( have_rows('experiences_section') ): while ( have_rows('experiences_section') ) : the_row(); 
-                                if( have_rows('experiences_cards') ): while ( have_rows('experiences_cards') ) : the_row();       ?>
-                            <div class="swiper-slide">
-                                <div class="alternate-img">
-                                    <img src="<?php  echo get_sub_field('banner_image'); ?>" alt="">
-                                    <div class="service-txt comm-small-title white">
-                                        <h5>0<?php echo $i ?></h5>
-                                        <h4 class="comm-txt-2 white"><?php  echo get_sub_field('title'); ?></h4>
-                                    </div>
-                                </div>
-                            </div>
-                            <?php $i++;  endwhile; endif;
-                            endwhile; endif;
-                            ?>
-                        </div>
-                        <div class="comm-nav">
-                            <div class="exp-nav-prev comm-prev"></div>
-                            <div class="exp-nav-next comm-next"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="f-col" data-aos="fade-up">
-                    <div class="alternate-txt">
-                        <div class="comm-head-wrap">
-                            <div class="small-head white">
-                                <h2><?php echo $experiences_section_data['small_text']; ?></h2>
-                            </div>
-                            <h2 class="comm-head-2 white">
-                                <?php echo $experiences_section_data['title']; ?>
-                            </h2>
-                        </div>
-                        <div class="swiper swiper-exp-txt">
-                            <div class="swiper-wrapper">
-                                <?php
-                                if( have_rows('experiences_section') ): while ( have_rows('experiences_section') ) : the_row(); 
-                                    if( have_rows('experiences_cards') ): while ( have_rows('experiences_cards') ) : the_row();       ?>
-                                <div class="swiper-slide">
-                                    <p class="comm-txt white"><?php  echo get_sub_field('content'); ?></p>
-                                    <a class="button white" href="<?php  echo get_sub_field('cta'); ?>">Explore more</a>
-                                </div>
-                                <?php  endwhile; endif;
-                                endwhile; endif; ?>
-                            </div>
-                        </div>
-                        <div class="pagination-exp comm-pagination white"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <?php endif; ?>
-
 
 
     <!-- Promise -->
@@ -407,8 +160,8 @@ get_header();
             <div class="promise-wrap">
                 <div class="f-row f-3">
                     <?php
-                            if( have_rows('our_promise_section') ): while ( have_rows('our_promise_section') ) : the_row(); 
-                                if( have_rows('our_promise_cards') ): while ( have_rows('our_promise_cards') ) : the_row();       ?>
+                    if( have_rows('our_promise_section') ): while ( have_rows('our_promise_section') ) : the_row(); 
+                    if( have_rows('our_promise_cards') ): while ( have_rows('our_promise_cards') ) : the_row();       ?>
                     <div class="f-col">
                         <div class="promise-box" data-aos="fade-up">
                             <div class="promise-icon">
@@ -420,7 +173,7 @@ get_header();
                     </div>
                     <?php  endwhile; endif;
                             endwhile; endif;
-                            ?>
+                    ?>
 
                 </div>
             </div>
@@ -429,19 +182,23 @@ get_header();
     <?php endif; ?>
 
     <!-- Book now -->
-    <div class="comm-section">
+    <?php  $book_now_data = get_field('book_now');
+    if( $book_now_data ): ?>
+    <div class="comm-section np-lines">
         <div class="lines-txt-bg">
-            <img src="" alt="">
+            <img src="<?php echo $book_now_data['background_image']; ?>" alt="">
         </div>
         <div class="container">
             <div class="lines-txt" data-aos="fade-up">
                 <p class="comm-txt-2">
-                    <?php echo $contact_section_data['white_section_content']; ?>
+                    <?php echo $book_now_data['content']; ?>
                 </p>
-                <a href="<?php echo $contact_section_data['book_now']; ?>" class="button">Charter Now</a>
+                <a href="<?php echo $book_now_data['book_now']; ?>" class="button">Charter Now</a>
             </div>
         </div>
     </div>
+    <?php endif; ?>
+
 
 </div>
 

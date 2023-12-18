@@ -1,3 +1,19 @@
+if ($(window).outerWidth() > 1200) {
+  var ww = $(window).outerWidth();
+  var wh = $(window).outerHeight();
+  console.log(ww);
+
+  $(".video-embed").width(ww + 100)
+  $(".video-embed").height(wh + 200)
+}
+else {
+  var ww = $(window).outerWidth();
+  $(".video-embed").width(ww + 100);
+  $(".home-banner").height(ww / 1.857);
+  $(".video-embed").height((ww / 1.857) + 120);
+}
+
+
 var swiperServices = new Swiper(".services-swiper", {
   speed: 800,
   spaceBetween: 30,
@@ -82,10 +98,7 @@ var swiperexp1 = new Swiper(".exp-swiper-1", {
   spaceBetween: 30,
   slidesPerView: 1,
   grabCursor: true,
-  navigation: {
-    nextEl: ".exp-nav-next",
-    prevEl: ".exp-nav-prev",
-  },
+
   pagination: {
     el: ".pagination-exp",
     type: "custom",
@@ -95,83 +108,19 @@ var swiperexp1 = new Swiper(".exp-swiper-1", {
   },
 });
 
-var swiperexp2 = new Swiper(".exp-swiper-2", {
-  speed: 800,
-  spaceBetween: 30,
-  slidesPerView: 1,
-  grabCursor: true,
-  navigation: {
-    nextEl: ".exp-nav-next",
-    prevEl: ".exp-nav-prev",
-  },
-  pagination: {
-    el: ".pagination-exp",
-    type: "custom",
-    renderCustom: function (swiper, current, total) {
-      return "0" + current + "<span></span>" + "0" + total;
-    },
-  },
-});
-var swiperexp3 = new Swiper(".exp-swiper-3", {
-  speed: 800,
-  spaceBetween: 30,
-  slidesPerView: 1,
-  grabCursor: true,
-  navigation: {
-    nextEl: ".exp-nav-next",
-    prevEl: ".exp-nav-prev",
-  },
-  pagination: {
-    el: ".pagination-exp",
-    type: "custom",
-    renderCustom: function (swiper, current, total) {
-      return "0" + current + "<span></span>" + "0" + total;
-    },
-  },
-});
-var swiperexp4 = new Swiper(".exp-swiper-4", {
-  speed: 800,
-  spaceBetween: 30,
-  slidesPerView: 1,
-  grabCursor: true,
-  navigation: {
-    nextEl: ".exp-nav-next",
-    prevEl: ".exp-nav-prev",
-  },
-  pagination: {
-    el: ".pagination-exp",
-    type: "custom",
-    renderCustom: function (swiper, current, total) {
-      return "0" + current + "<span></span>" + "0" + total;
-    },
-  },
-});
-var swiperexp5 = new Swiper(".exp-swiper-5", {
-  speed: 800,
-  spaceBetween: 30,
-  slidesPerView: 1,
-  grabCursor: true,
-  navigation: {
-    nextEl: ".exp-nav-next",
-    prevEl: ".exp-nav-prev",
-  },
-  pagination: {
-    el: ".pagination-exp",
-    type: "custom",
-    renderCustom: function (swiper, current, total) {
-      return "0" + current + "<span></span>" + "0" + total;
-    },
-  },
-});
 var swiperexpTxt = new Swiper(".swiper-exp-txt", {
   speed: 800,
   spaceBetween: 30,
   slidesPerView: 1,
   grabCursor: true,
+  navigation: {
+    nextEl: ".exp-nav-next",
+    prevEl: ".exp-nav-prev",
+  },
 });
 
-swiperexp.controller.control = swiperexpTxt;
-swiperexpTxt.controller.control = swiperexp;
+swiperexp1.controller.control = swiperexpTxt;
+swiperexpTxt.controller.control = swiperexp1;
 
 var swipertesti = new Swiper(".testi-swiper", {
   speed: 800,

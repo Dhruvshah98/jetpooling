@@ -80,6 +80,15 @@ function blankslate_footer()
         wp_enqueue_script('charters',  get_template_directory_uri() . '/assets/js/charters.js', array(), 1.1, true);
     }
 
+
+    if (is_page_template('charters-new.php')) {
+        wp_enqueue_script('charters',  get_template_directory_uri() . '/assets/js/charters-new.js', array(), 1.1, true);
+    }
+    if (is_page_template('acquisitions.php')) {
+        wp_enqueue_script('charters',  get_template_directory_uri() . '/assets/js/charters-new.js', array(), 1.1, true);
+    }
+
+
     
 
 
