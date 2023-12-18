@@ -31,7 +31,7 @@ get_header();
     <?php
                 $banner_section_data = get_field('banner_section');
                 if( $banner_section_data ): ?>
-    <div class="banner-wrap">
+    <div class="banner-wrap charters-wrap-banner">
         <div class="banner-bg" data-aos="zoom-out">
             <!-- <img src="<?php echo $banner_section_data['banner_image']; ?>" alt=""> -->
 
@@ -41,7 +41,7 @@ get_header();
 
             <div class="home-banner">
                 <iframe class="video-embed"
-                    src="h<?php echo $banner_section_data['banner_image']; ?>?autoplay=1&amp;mute=1&amp;controls=1&amp;iv_load_policy=3&amp;modestbranding=1&amp;rel=0&amp;showinfo=0&amp;autoplay=1&amp;mute=1&amp;loop=1"
+                    src="<?php echo $banner_section_data['banner_image']; ?>?autoplay=1&amp;mute=1&amp;controls=1&amp;iv_load_policy=3&amp;modestbranding=1&amp;rel=0&amp;showinfo=0&amp;loop=1&amp;&playlist=KxhhuX19KgQ"
                     frameborder="0">
                 </iframe>
             </div>
@@ -66,7 +66,7 @@ get_header();
     if( $about_section_data ): ?>
     <div class="comm-section">
         <div class="container">
-            <div class="f-row f-2 f-990-1">
+            <div class="f-row f-2 f-990-1 about-charters">
                 <div class="f-col">
                     <div class="alternate-txt" data-aos="fade-up">
                         <div class="comm-head-wrap">
@@ -157,8 +157,8 @@ get_header();
     if( $our_promise_section_data ): ?>
     <div class="comm-section">
         <div class="container">
-            <div class="promise-wrap">
-                <div class="f-row f-3">
+            <div class="promise-wrap promise-charters">
+                <div class="f-row f-3 f-990-2">
                     <?php
                     if( have_rows('our_promise_section') ): while ( have_rows('our_promise_section') ) : the_row(); 
                     if( have_rows('our_promise_cards') ): while ( have_rows('our_promise_cards') ) : the_row();       ?>
