@@ -157,6 +157,14 @@ get_header();
     if( $our_promise_section_data ): ?>
     <div class="comm-section">
         <div class="container">
+            <div class="comm-head-wrap">
+                <div class="small-head">
+                    <h2><?php echo $our_promise_section_data['small_text']; ?></h2>
+                </div>
+                <h2 class="comm-head-2">
+                    <?php echo $our_promise_section_data['title']; ?>
+                </h2>
+            </div>
             <div class="promise-wrap promise-charters">
                 <div class="f-row f-3 f-990-2">
                     <?php

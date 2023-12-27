@@ -3444,7 +3444,7 @@ body {
   object-fit: contain;
 }
 .comm-head-wrap {
-  max-width: 420px;
+  max-width: 460px;
 }
 .comm-head-wrap .small-head h2 {
   text-align: left;
@@ -4624,7 +4624,7 @@ body {
     row-gap: 60px;
   }
   .comm-head-wrap {
-    max-width: 360px;
+    max-width: 390px;
   }
   .promise-box h3 {
     margin: 30px 0;
